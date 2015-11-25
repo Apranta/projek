@@ -45,13 +45,15 @@
 | the active record class
 */
 
+// access database (phpmyadmin) : https://bedok.dnsbit.net:2083
+
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'ariefganteng';
-$db['default']['database'] = '';
+$db['default']['hostname'] = 'srivijayaid.com';
+$db['default']['username'] = 'srvjycom_user';
+$db['default']['password'] = 'anestesi';
+$db['default']['database'] = 'srvjycom_pd';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
