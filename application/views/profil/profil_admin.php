@@ -37,25 +37,25 @@
                   <?php endif; ?>
 
                   <div class="form-group">
-                    <label for="nama_admin" class="col-md-3 control-label">Nama Administrator</label>
+                    <label for="nama_admin" class="col-md-3 control-label">Nama Administrator*</label>
                     <div class="col-md-9">
                       <input type="text" class="form-control" id="nama_admin" name="nama_admin" placeholder="Nama Administrator" value="<?php echo $admin->nama_admin; ?>" required>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="inisial_admin" class="col-md-3 control-label">Inisial Administrator</label>
+                    <label for="inisial_admin" class="col-md-3 control-label">Inisial Administrator*</label>
                     <div class="col-md-9">
                       <input type="text" class="form-control" id="inisial_admin" name="inisial_admin" placeholder="Inisial Administrator" value="<?php echo $admin->inisial_admin; ?>" required>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="email" class="col-md-3 control-label">Email</label>
+                    <label for="email" class="col-md-3 control-label">Email*</label>
                     <div class="col-md-9">
                       <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo $admin->email; ?>" required>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="no_hp" class="col-md-3 control-label">No. HP</label>
+                    <label for="no_hp" class="col-md-3 control-label">No. HP*</label>
                     <div class="col-md-9">
                       <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="No. Handphone" value="<?php echo $admin->no_hp; ?>" required>
                     </div>
