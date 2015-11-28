@@ -369,3 +369,35 @@ DEBUG - 2015-11-28 17:53:44 --> File loaded: application/views/kompetensi/daftar
 DEBUG - 2015-11-28 17:53:44 --> File loaded: application/views/footer.php
 DEBUG - 2015-11-28 17:53:44 --> Final output sent to browser
 DEBUG - 2015-11-28 17:53:44 --> Total execution time: 0.5541
+DEBUG - 2015-11-28 18:00:00 --> Config Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Hooks Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 18:00:00 --> URI Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Router Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Output Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Security Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Input Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 18:00:00 --> Language Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Loader Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 18:00:00 --> Database Driver Class Initialized
+ERROR - 2015-11-28 18:00:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 18:00:00 --> Session Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 18:00:00 --> Session routines successfully run
+DEBUG - 2015-11-28 18:00:00 --> Controller Class Initialized
+DEBUG - 2015-11-28 18:00:00 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 18:00:00 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 18:00:00 --> File loaded: application/views/kompetensi/daftar.php
+DEBUG - 2015-11-28 18:00:00 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 18:00:00 --> Final output sent to browser
+DEBUG - 2015-11-28 18:00:00 --> Total execution time: 0.3379
+DEBUG - 2015-11-28 18:00:03 --> Config Class Initialized
+DEBUG - 2015-11-28 18:00:03 --> Hooks Class Initialized
+DEBUG - 2015-11-28 18:00:03 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 18:00:03 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 18:00:03 --> URI Class Initialized
+DEBUG - 2015-11-28 18:00:03 --> Router Class Initialized
+ERROR - 2015-11-28 18:00:03 --> 404 Page Not Found --> komponen
