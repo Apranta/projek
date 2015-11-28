@@ -12,12 +12,12 @@
               <p><?php echo $this->session->userdata('nama');?></p>
 
               <?php if($this->session->userdata('tipeuser') == 'residen'): ?>
-                <?php if($this->session->userdata('tingkat') == '1'): ?>
-                  <small class="label label-danger">Residen Tingkat 1</small>
-                <?php elseif($this->session->userdata('tingkat') == '2'): ?>
-                  <small class="label label-warning">Residen Tingkat 2</small>
-                <?php elseif($this->session->userdata('tingkat') == '3'): ?>
-                  <small class="label label-success">Residen Tingkat 3</small>
+                <?php if($this->session->userdata('tahap') == '1'): ?>
+                  <small class="label label-danger">Residen Tahap 1</small>
+                <?php elseif($this->session->userdata('tahap') == '2'): ?>
+                  <small class="label label-warning">Residen Tahap 2</small>
+                <?php elseif($this->session->userdata('tahap') == '3'): ?>
+                  <small class="label label-success">Residen Tahap 3</small>
                 <?php else: ?>
                   <a>Residen</a>
                 <?php endif; ?>
@@ -43,6 +43,60 @@
             </a>
           </li>
 
+          <!--Catatan Harian -->
+           <?php if ($judulhalaman === "Catatan"): ?>
+          <li class="active">
+          <?php else: ?>
+          <li>
+          <?php endif; ?>
+            <a href="<?php echo base_url('index.php/kompetensi'); ?>">
+              <i class="fa fa-hospital-o"></i>
+              <span>Catatan Harian</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+
+            <ul class="treeview-menu">
+              <?php if ($judulhalaman === "pasien_bangsal "): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Pasien Bangsal</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Pasien Bangsal</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "pasien_poliklinik"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Pasien Poliklinik</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Pasien Poliklinik</a></li>
+              <?php endif; ?>
+          
+              <?php if ($judulhalaman === "pasien_igd"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Pasien IGD</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Pasien IGD</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "jaga_malam "): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Jaga Malam</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Jaga Malam</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "konsul_antar_bagian"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Konsul Antar Bagian</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Konsul Antar Bagian</a></li>
+              <?php endif; ?>
+          
+              <?php if ($judulhalaman === "laporan_jaga"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Laporan Jaga</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Laporan Jaga</a></li>
+              <?php endif; ?>
+            </ul>
+
+          </li>
+
+
+
           <!-- Kompetensi -->
           <?php if ($judulhalaman === "Kompetensi"): ?>
           <li class="active">
@@ -53,6 +107,8 @@
               <i class="fa fa-user-md"></i>
               <span>Kompetensi</span>
             </a>
+
+
           </li>
 
           <!-- Monitoring -->
@@ -135,6 +191,42 @@
               <?php endif; ?>
             </ul>
           </li>
+
+          <!-- Pengguna -->
+          <?php if ($this->session->userdata('tipeuser') === "administrator"): ?>
+          
+          <?php if ($judulhalaman === "Residen" || $judulhalaman === "Konsulen" || $judulhalaman === "Administrator" || $judulhalaman === "Semua Pengguna"): ?>
+          <li class="treeview active">
+          <?php else: ?>
+          <li class="treeview">
+          <?php endif; ?>
+            <a href="#">
+              <i class="fa fa-users"></i>
+              <span>Pengguna</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+
+            <ul class="treeview-menu">
+              <?php if ($judulhalaman === "Residen"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/pengguna/residen'); ?>"><i class="fa fa-circle-o"></i> Residen</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/pengguna/residen'); ?>"><i class="fa fa-circle-o"></i> Residen</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "Konsulen"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/pengguna/konsulen'); ?>"><i class="fa fa-circle-o"></i> Konsulen</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/pengguna/konsulen'); ?>"><i class="fa fa-circle-o"></i> Konsulen</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "Administrator"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>"><i class="fa fa-circle-o"></i> Administrator</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/pengguna/admin'); ?>"><i class="fa fa-circle-o"></i> Administrator</a></li>
+              <?php endif; ?>
+            </ul>
+          </li>
+          <?php endif; ?>
 
           <!-- Profil -->
           <?php if ($judulhalaman === "Profil"): ?>
