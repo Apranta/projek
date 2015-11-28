@@ -43,6 +43,60 @@
             </a>
           </li>
 
+          <!--Catatan Harian -->
+           <?php if ($judulhalaman === "Catatan"): ?>
+          <li class="active">
+          <?php else: ?>
+          <li>
+          <?php endif; ?>
+            <a href="<?php echo base_url('index.php/kompetensi'); ?>">
+              <i class="fa fa-hospital-o"></i>
+              <span>Catatan Harian</span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </a>
+
+            <ul class="treeview-menu">
+              <?php if ($judulhalaman === "pasien_bangsal "): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Pasien Bangsal</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Pasien Bangsal</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "pasien_poliklinik"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Pasien Poliklinik</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Pasien Poliklinik</a></li>
+              <?php endif; ?>
+          
+              <?php if ($judulhalaman === "pasien_igd"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Pasien IGD</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Pasien IGD</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "jaga_malam "): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Jaga Malam</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Jaga Malam</a></li>
+              <?php endif; ?>
+
+              <?php if ($judulhalaman === "konsul_antar_bagian"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Konsul Antar Bagian</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Konsul Antar Bagian</a></li>
+              <?php endif; ?>
+          
+              <?php if ($judulhalaman === "laporan_jaga"): ?>
+              <li class="active"><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Laporan Jaga</a></li>
+              <?php else: ?>
+              <li><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Laporan Jaga</a></li>
+              <?php endif; ?>
+            </ul>
+
+          </li>
+
+
+
           <!-- Kompetensi -->
           <?php if ($judulhalaman === "Kompetensi"): ?>
           <li class="active">
@@ -53,6 +107,8 @@
               <i class="fa fa-user-md"></i>
               <span>Kompetensi</span>
             </a>
+
+
           </li>
 
           <!-- Monitoring -->
