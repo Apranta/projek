@@ -2955,3 +2955,760 @@ ERROR - 2015-11-28 18:00:03 --> 404 Page Not Found --> komponen
 =======
 >>>>>>> 3b20b6261a6055a3e70d1041dfe41ff120c9472d
 >>>>>>> 9d4a46e57495d48a3cad6133be408b38f87f9812
+DEBUG - 2015-11-28 20:31:26 --> Config Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:31:26 --> URI Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> Router Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> Output Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> Security Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> Input Class Initialized
+DEBUG - 2015-11-28 20:31:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:31:26 --> Language Class Initialized
+DEBUG - 2015-11-28 20:31:27 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:31:27 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:31:27 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:31:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+ERROR - 2015-11-28 20:31:27 --> Severity: Notice  --> mysql_pconnect(): send of 5 bytes failed with errno=10054 An existing connection was forcibly closed by the remote host.
+ C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:31:27 --> Session Class Initialized
+DEBUG - 2015-11-28 20:31:27 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:31:27 --> A session cookie was not found.
+DEBUG - 2015-11-28 20:31:27 --> Session routines successfully run
+DEBUG - 2015-11-28 20:31:27 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Config Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:31:28 --> URI Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Router Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Output Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Security Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Input Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:31:28 --> Language Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:31:28 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:31:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:31:28 --> Session Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:31:28 --> Session routines successfully run
+DEBUG - 2015-11-28 20:31:28 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Model Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Model Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Model Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Model Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> Model Class Initialized
+DEBUG - 2015-11-28 20:31:28 --> File loaded: application/views/login/login_user.php
+DEBUG - 2015-11-28 20:31:28 --> Final output sent to browser
+DEBUG - 2015-11-28 20:31:28 --> Total execution time: 0.6394
+DEBUG - 2015-11-28 20:31:39 --> Config Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:31:39 --> URI Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Router Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Output Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Security Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Input Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:31:39 --> Language Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:31:39 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:31:39 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:31:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+ERROR - 2015-11-28 20:31:42 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+ERROR - 2015-11-28 20:31:42 --> Unable to connect to the database
+DEBUG - 2015-11-28 20:31:42 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-11-28 20:32:38 --> Config Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:32:38 --> URI Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Router Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Output Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Security Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Input Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:32:38 --> Language Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:32:38 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:32:38 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:32:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:32:39 --> Session Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:32:39 --> Session routines successfully run
+DEBUG - 2015-11-28 20:32:39 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Config Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:32:39 --> URI Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Router Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Output Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Security Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Input Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:32:39 --> Language Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:32:39 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:32:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:32:39 --> Session Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:32:39 --> Session routines successfully run
+DEBUG - 2015-11-28 20:32:39 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:39 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:40 --> File loaded: application/views/login/login_user.php
+DEBUG - 2015-11-28 20:32:40 --> Final output sent to browser
+DEBUG - 2015-11-28 20:32:40 --> Total execution time: 0.4384
+DEBUG - 2015-11-28 20:32:46 --> Config Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:32:46 --> URI Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Router Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Output Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Security Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Input Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:32:46 --> Language Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:32:46 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:32:46 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+ERROR - 2015-11-28 20:32:46 --> Severity: Notice  --> mysql_pconnect(): send of 5 bytes failed with errno=10054 An existing connection was forcibly closed by the remote host.
+ C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:32:46 --> Session Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:32:46 --> Session routines successfully run
+DEBUG - 2015-11-28 20:32:46 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:46 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Config Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:32:47 --> URI Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Router Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Output Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Security Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Input Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:32:47 --> Language Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:32:47 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:32:47 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:32:47 --> Session Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:32:47 --> Session routines successfully run
+DEBUG - 2015-11-28 20:32:47 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> Model Class Initialized
+DEBUG - 2015-11-28 20:32:47 --> File loaded: application/views/login/login_user.php
+DEBUG - 2015-11-28 20:32:47 --> Final output sent to browser
+DEBUG - 2015-11-28 20:32:47 --> Total execution time: 0.4549
+DEBUG - 2015-11-28 20:33:00 --> Config Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:33:00 --> URI Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Router Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Output Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Security Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Input Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:33:00 --> Language Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:33:00 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:33:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:33:00 --> Session Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:33:00 --> Session routines successfully run
+DEBUG - 2015-11-28 20:33:00 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:33:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Config Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:33:01 --> URI Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Router Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Output Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Security Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Input Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:33:01 --> Language Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:33:01 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:33:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:33:01 --> Session Class Initialized
+DEBUG - 2015-11-28 20:33:01 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:33:01 --> Session routines successfully run
+DEBUG - 2015-11-28 20:33:01 --> Controller Class Initialized
+ERROR - 2015-11-28 20:33:01 --> 404 Page Not Found --> dashboard/index
+DEBUG - 2015-11-28 20:33:11 --> Config Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:33:11 --> URI Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Router Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:33:11 --> Output Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Security Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Input Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:33:11 --> Language Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:33:11 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:33:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:33:11 --> Session Class Initialized
+DEBUG - 2015-11-28 20:33:11 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:33:11 --> Session routines successfully run
+DEBUG - 2015-11-28 20:33:11 --> Controller Class Initialized
+ERROR - 2015-11-28 20:33:11 --> 404 Page Not Found --> dashboard/index
+DEBUG - 2015-11-28 20:34:23 --> Config Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:34:23 --> URI Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Router Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:34:23 --> Output Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Security Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Input Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:34:23 --> Language Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:34:23 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:34:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:34:23 --> Session Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:34:23 --> Session routines successfully run
+DEBUG - 2015-11-28 20:34:23 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:34:23 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:34:23 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:34:23 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:34:23 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:34:23 --> Final output sent to browser
+DEBUG - 2015-11-28 20:34:23 --> Total execution time: 0.5014
+DEBUG - 2015-11-28 20:34:29 --> Config Class Initialized
+DEBUG - 2015-11-28 20:34:29 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:34:29 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:34:29 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:34:29 --> URI Class Initialized
+DEBUG - 2015-11-28 20:34:29 --> Router Class Initialized
+ERROR - 2015-11-28 20:34:29 --> 404 Page Not Found --> komponen
+DEBUG - 2015-11-28 20:37:28 --> Config Class Initialized
+DEBUG - 2015-11-28 20:37:28 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:37:28 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:37:28 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:37:28 --> URI Class Initialized
+DEBUG - 2015-11-28 20:37:28 --> Router Class Initialized
+ERROR - 2015-11-28 20:37:28 --> 404 Page Not Found --> komponen
+DEBUG - 2015-11-28 20:37:29 --> Config Class Initialized
+DEBUG - 2015-11-28 20:37:29 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:37:29 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:37:29 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:37:29 --> URI Class Initialized
+DEBUG - 2015-11-28 20:37:29 --> Router Class Initialized
+ERROR - 2015-11-28 20:37:29 --> 404 Page Not Found --> komponen
+DEBUG - 2015-11-28 20:37:31 --> Config Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:37:31 --> URI Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Router Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:37:31 --> Output Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Security Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Input Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:37:31 --> Language Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:37:31 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:37:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:37:31 --> Session Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:37:31 --> Session routines successfully run
+DEBUG - 2015-11-28 20:37:31 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:37:31 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:37:31 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:37:31 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:37:31 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:37:31 --> Final output sent to browser
+DEBUG - 2015-11-28 20:37:31 --> Total execution time: 0.5029
+DEBUG - 2015-11-28 20:37:33 --> Config Class Initialized
+DEBUG - 2015-11-28 20:37:33 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:37:34 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:37:34 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:37:34 --> URI Class Initialized
+DEBUG - 2015-11-28 20:37:34 --> Router Class Initialized
+ERROR - 2015-11-28 20:37:34 --> 404 Page Not Found --> komponen
+DEBUG - 2015-11-28 20:37:38 --> Config Class Initialized
+DEBUG - 2015-11-28 20:37:38 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:37:38 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:37:38 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:37:38 --> URI Class Initialized
+DEBUG - 2015-11-28 20:37:38 --> Router Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Config Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:38:11 --> URI Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Router Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:38:11 --> Output Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Security Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Input Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:38:11 --> Language Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:38:11 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:38:11 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:38:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+ERROR - 2015-11-28 20:38:11 --> Severity: Notice  --> mysql_pconnect(): send of 5 bytes failed with errno=10054 An existing connection was forcibly closed by the remote host.
+ C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:38:13 --> Session Class Initialized
+DEBUG - 2015-11-28 20:38:13 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:38:13 --> Session routines successfully run
+DEBUG - 2015-11-28 20:38:13 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:38:13 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:38:13 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:38:13 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:38:13 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:38:13 --> Final output sent to browser
+DEBUG - 2015-11-28 20:38:13 --> Total execution time: 1.6192
+DEBUG - 2015-11-28 20:38:15 --> Config Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:38:15 --> URI Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Router Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Output Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Security Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Input Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:38:15 --> Language Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:38:15 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:38:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:38:15 --> Session Class Initialized
+DEBUG - 2015-11-28 20:38:15 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:38:15 --> Session routines successfully run
+DEBUG - 2015-11-28 20:38:15 --> Controller Class Initialized
+ERROR - 2015-11-28 20:38:15 --> Severity: Notice  --> Undefined property: catatan_harian::$bukuharian_model C:\xampp\htdocs\ppds-pd\application\controllers\catatan_harian.php 31
+DEBUG - 2015-11-28 20:40:51 --> Config Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:40:51 --> URI Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Router Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Output Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Security Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Input Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:40:51 --> Language Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:40:51 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:40:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:40:51 --> Session Class Initialized
+DEBUG - 2015-11-28 20:40:51 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:40:51 --> Session routines successfully run
+DEBUG - 2015-11-28 20:40:51 --> Controller Class Initialized
+ERROR - 2015-11-28 20:40:51 --> Severity: Notice  --> Undefined property: catatan_harian::$bukuharian_model C:\xampp\htdocs\ppds-pd\application\controllers\catatan_harian.php 31
+DEBUG - 2015-11-28 20:40:53 --> Config Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:40:53 --> URI Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> Router Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:40:53 --> Output Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> Security Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> Input Class Initialized
+DEBUG - 2015-11-28 20:40:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:40:53 --> Language Class Initialized
+DEBUG - 2015-11-28 20:40:54 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:40:54 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:40:54 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:40:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:40:54 --> Session Class Initialized
+DEBUG - 2015-11-28 20:40:54 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:40:54 --> Session routines successfully run
+DEBUG - 2015-11-28 20:40:54 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:40:54 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:40:54 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:40:54 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:40:54 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:40:54 --> Final output sent to browser
+DEBUG - 2015-11-28 20:40:54 --> Total execution time: 0.6570
+DEBUG - 2015-11-28 20:40:57 --> Config Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:40:57 --> URI Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Router Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Output Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Security Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Input Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:40:57 --> Language Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:40:57 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:40:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+ERROR - 2015-11-28 20:40:57 --> Severity: Notice  --> mysql_pconnect(): send of 5 bytes failed with errno=10054 An existing connection was forcibly closed by the remote host.
+ C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:40:57 --> Session Class Initialized
+DEBUG - 2015-11-28 20:40:57 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:40:57 --> Session routines successfully run
+DEBUG - 2015-11-28 20:40:57 --> Controller Class Initialized
+ERROR - 2015-11-28 20:40:57 --> Severity: Notice  --> Undefined property: catatan_harian::$bukuharian_model C:\xampp\htdocs\ppds-pd\application\controllers\catatan_harian.php 31
+DEBUG - 2015-11-28 20:41:49 --> Config Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:41:49 --> URI Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Router Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:41:49 --> Output Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Security Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Input Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:41:49 --> Language Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:41:49 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:41:49 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:41:49 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:41:51 --> Config Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:41:51 --> URI Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Router Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Session Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Output Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:41:51 --> Security Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Session routines successfully run
+DEBUG - 2015-11-28 20:41:51 --> Input Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:41:51 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:41:51 --> Language Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:41:51 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:41:51 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:41:51 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:41:51 --> Final output sent to browser
+DEBUG - 2015-11-28 20:41:51 --> Database Driver Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Total execution time: 2.1850
+ERROR - 2015-11-28 20:41:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:41:51 --> Session Class Initialized
+DEBUG - 2015-11-28 20:41:51 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:41:51 --> Session routines successfully run
+DEBUG - 2015-11-28 20:41:51 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:45:05 --> Config Class Initialized
+DEBUG - 2015-11-28 20:45:05 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:45:06 --> URI Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Router Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Output Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Security Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Input Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:45:06 --> Language Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:45:06 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:45:06 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:45:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:45:08 --> Session Class Initialized
+DEBUG - 2015-11-28 20:45:08 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:45:08 --> Session routines successfully run
+DEBUG - 2015-11-28 20:45:08 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:45:08 --> Model Class Initialized
+DEBUG - 2015-11-28 20:45:08 --> Model Class Initialized
+DEBUG - 2015-11-28 20:45:08 --> Model Class Initialized
+DEBUG - 2015-11-28 20:45:08 --> Model Class Initialized
+ERROR - 2015-11-28 20:45:08 --> Severity: Notice  --> Undefined property: catatan_harian::$bukuharian_model C:\xampp\htdocs\ppds-pd\application\controllers\catatan_harian.php 35
+DEBUG - 2015-11-28 20:45:10 --> Config Class Initialized
+DEBUG - 2015-11-28 20:45:10 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:45:10 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:45:10 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:45:10 --> URI Class Initialized
+DEBUG - 2015-11-28 20:45:10 --> Router Class Initialized
+DEBUG - 2015-11-28 20:45:11 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:45:11 --> Output Class Initialized
+DEBUG - 2015-11-28 20:45:11 --> Security Class Initialized
+DEBUG - 2015-11-28 20:45:11 --> Input Class Initialized
+DEBUG - 2015-11-28 20:45:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:45:11 --> Language Class Initialized
+DEBUG - 2015-11-28 20:45:11 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:45:11 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:45:11 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:45:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:45:13 --> Session Class Initialized
+DEBUG - 2015-11-28 20:45:13 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:45:13 --> Session routines successfully run
+DEBUG - 2015-11-28 20:45:13 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:45:13 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:45:13 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:45:13 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:45:13 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:45:13 --> Final output sent to browser
+DEBUG - 2015-11-28 20:45:13 --> Total execution time: 2.5238
+DEBUG - 2015-11-28 20:45:14 --> Config Class Initialized
+DEBUG - 2015-11-28 20:45:14 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:45:14 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:45:14 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:45:14 --> URI Class Initialized
+DEBUG - 2015-11-28 20:45:14 --> Router Class Initialized
+DEBUG - 2015-11-28 20:45:14 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:45:15 --> Output Class Initialized
+DEBUG - 2015-11-28 20:45:15 --> Security Class Initialized
+DEBUG - 2015-11-28 20:45:15 --> Input Class Initialized
+DEBUG - 2015-11-28 20:45:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:45:15 --> Language Class Initialized
+DEBUG - 2015-11-28 20:45:15 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:45:15 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:45:15 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:45:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:45:15 --> Session Class Initialized
+DEBUG - 2015-11-28 20:45:15 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:45:15 --> Session routines successfully run
+DEBUG - 2015-11-28 20:45:15 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:45:15 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:45:15 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:45:15 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:45:15 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:45:15 --> Final output sent to browser
+DEBUG - 2015-11-28 20:45:16 --> Total execution time: 1.0742
+DEBUG - 2015-11-28 20:45:46 --> Config Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:45:46 --> URI Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Router Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> No URI present. Default controller set.
+DEBUG - 2015-11-28 20:45:46 --> Output Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Security Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Input Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:45:46 --> Language Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:45:46 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:45:46 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:45:47 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:45:48 --> Session Class Initialized
+DEBUG - 2015-11-28 20:45:48 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:45:48 --> Session routines successfully run
+DEBUG - 2015-11-28 20:45:48 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:45:48 --> File loaded: application/views/header.php
+DEBUG - 2015-11-28 20:45:48 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:45:48 --> File loaded: application/views/dashboard/dashboard_residen.php
+DEBUG - 2015-11-28 20:45:48 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:45:48 --> Final output sent to browser
+DEBUG - 2015-11-28 20:45:48 --> Total execution time: 1.8496
+DEBUG - 2015-11-28 20:45:52 --> Config Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:45:52 --> URI Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Router Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Output Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Security Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Input Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:45:52 --> Language Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:45:52 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:45:52 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:45:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:45:53 --> Session Class Initialized
+DEBUG - 2015-11-28 20:45:53 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:45:53 --> Session routines successfully run
+DEBUG - 2015-11-28 20:45:53 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:45:53 --> Model Class Initialized
+DEBUG - 2015-11-28 20:45:53 --> Model Class Initialized
+DEBUG - 2015-11-28 20:45:53 --> Model Class Initialized
+DEBUG - 2015-11-28 20:45:53 --> Model Class Initialized
+DEBUG - 2015-11-28 20:45:53 --> DB Transaction Failure
+ERROR - 2015-11-28 20:45:53 --> Query error: Table 'srvjycom_pd.buku_harian' doesn't exist
+DEBUG - 2015-11-28 20:45:53 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2015-11-28 20:47:56 --> Config Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:47:56 --> URI Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Router Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Output Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Security Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Input Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:47:56 --> Language Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:47:56 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:47:56 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:47:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:48:00 --> Session Class Initialized
+DEBUG - 2015-11-28 20:48:00 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:48:00 --> Session routines successfully run
+DEBUG - 2015-11-28 20:48:00 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:48:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:48:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:48:00 --> Model Class Initialized
+DEBUG - 2015-11-28 20:48:00 --> Model Class Initialized
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\header.php 12
+DEBUG - 2015-11-28 20:48:01 --> File loaded: application/views/header.php
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 35
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 47
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 59
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 65
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 71
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 77
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 83
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 89
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 101
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 115
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 127
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 139
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 151
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 175
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 181
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 187
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 232
+ERROR - 2015-11-28 20:48:01 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 244
+DEBUG - 2015-11-28 20:48:01 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:48:44 --> Config Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:48:44 --> URI Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Router Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Output Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Security Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Input Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:48:44 --> Language Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:48:44 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:48:44 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:48:44 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:48:45 --> Session Class Initialized
+DEBUG - 2015-11-28 20:48:45 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:48:45 --> Session routines successfully run
+DEBUG - 2015-11-28 20:48:45 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:48:45 --> Model Class Initialized
+DEBUG - 2015-11-28 20:48:45 --> Model Class Initialized
+DEBUG - 2015-11-28 20:48:45 --> Model Class Initialized
+DEBUG - 2015-11-28 20:48:45 --> Model Class Initialized
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\header.php 12
+DEBUG - 2015-11-28 20:48:47 --> File loaded: application/views/header.php
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 35
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 47
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 59
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 65
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 71
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 77
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 83
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 89
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 101
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 115
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 127
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 139
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 151
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 175
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 181
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 187
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 232
+ERROR - 2015-11-28 20:48:47 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 244
+DEBUG - 2015-11-28 20:48:47 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:49:02 --> Config Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> Hooks Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> Utf8 Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> UTF-8 Support Enabled
+DEBUG - 2015-11-28 20:49:02 --> URI Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> Router Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> Output Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> Security Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> Input Class Initialized
+DEBUG - 2015-11-28 20:49:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-11-28 20:49:02 --> Language Class Initialized
+DEBUG - 2015-11-28 20:49:03 --> Loader Class Initialized
+DEBUG - 2015-11-28 20:49:03 --> Helper loaded: url_helper
+DEBUG - 2015-11-28 20:49:03 --> Database Driver Class Initialized
+ERROR - 2015-11-28 20:49:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ppds-pd\system\database\drivers\mysql\mysql_driver.php 92
+DEBUG - 2015-11-28 20:49:06 --> Session Class Initialized
+DEBUG - 2015-11-28 20:49:06 --> Helper loaded: string_helper
+DEBUG - 2015-11-28 20:49:06 --> Session routines successfully run
+DEBUG - 2015-11-28 20:49:06 --> Controller Class Initialized
+DEBUG - 2015-11-28 20:49:06 --> Model Class Initialized
+DEBUG - 2015-11-28 20:49:06 --> Model Class Initialized
+DEBUG - 2015-11-28 20:49:06 --> Model Class Initialized
+DEBUG - 2015-11-28 20:49:06 --> Model Class Initialized
+ERROR - 2015-11-28 20:49:06 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\header.php 12
+DEBUG - 2015-11-28 20:49:06 --> File loaded: application/views/header.php
+ERROR - 2015-11-28 20:49:06 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 35
+ERROR - 2015-11-28 20:49:06 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 47
+ERROR - 2015-11-28 20:49:06 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 59
+ERROR - 2015-11-28 20:49:06 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 65
+ERROR - 2015-11-28 20:49:06 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 71
+ERROR - 2015-11-28 20:49:06 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 77
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 83
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 89
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 101
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 115
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 127
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 139
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 151
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 163
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 175
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 181
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 187
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 232
+ERROR - 2015-11-28 20:49:07 --> Severity: Notice  --> Undefined variable: judulhalaman C:\xampp\htdocs\ppds-pd\application\views\sidebar.php 244
+DEBUG - 2015-11-28 20:49:07 --> File loaded: application/views/sidebar.php
+DEBUG - 2015-11-28 20:49:07 --> File loaded: application/views/catatan/pasien_bangsal/daftar.php
+DEBUG - 2015-11-28 20:49:07 --> File loaded: application/views/footer.php
+DEBUG - 2015-11-28 20:49:07 --> Final output sent to browser
+DEBUG - 2015-11-28 20:49:07 --> Total execution time: 4.3132

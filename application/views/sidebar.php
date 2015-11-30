@@ -56,13 +56,14 @@
             </a>
 
             <ul class="treeview-menu">
-              <?php if ($judulhalaman === "pasien_bangsal "): ?>
-              <li class="active"><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Pasien Bangsal</a></li>
+              <?php if ($judulhalaman === "Pasien Bangsal "): ?>
+              <li class="active">
               <?php else: ?>
-              <li><a href="<?php echo base_url('index.php/komponen/pasien'); ?>"><i class="fa fa-circle-o"></i> Pasien Bangsal</a></li>
+              <li>
               <?php endif; ?>
+              <a href="<?php echo base_url('index.php/pasien_bangsal/daftar'); ?>"><i class="fa fa-circle-o"></i> Pasien Bangsal</a></li>             
 
-              <?php if ($judulhalaman === "pasien_poliklinik"): ?>
+             <!--  <?php if ($judulhalaman === "pasien_poliklinik"): ?>
               <li class="active"><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Pasien Poliklinik</a></li>
               <?php else: ?>
               <li><a href="<?php echo base_url('index.php/komponen/operator'); ?>"><i class="fa fa-circle-o"></i> Pasien Poliklinik</a></li>
@@ -90,7 +91,7 @@
               <li class="active"><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Laporan Jaga</a></li>
               <?php else: ?>
               <li><a href="<?php echo base_url('index.php/komponen/ruangan'); ?>"><i class="fa fa-circle-o"></i> Laporan Jaga</a></li>
-              <?php endif; ?>
+              <?php endif; ?> -->
             </ul>
 
           </li>

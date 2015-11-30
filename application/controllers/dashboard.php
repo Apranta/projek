@@ -24,4 +24,6 @@ class Dashboard extends CI_Controller {
 		$this->load->view('dashboard/dashboard_residen', $this->data);
 		$this->load->view('footer');
 	}
+
+	
 }
