@@ -6,8 +6,8 @@
           <h1>Admin</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Pengguna</li>
-            <li class="active">Admin</li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Pengguna</a></li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Administrator</a></li>
           </ol>
         </section>
 
@@ -34,11 +34,11 @@
                 </div>
               <?php endif; ?>
 
-              <table id="table_admin" class="table table-bordered table-hover">
+              <table class="table table-bordered table-hover">
                 <thead>
                   <tr>
                     <th>Nama Admin</th>
-                    <th>Inisial Admin</th>
+                    <th>Username</th>
                     <th>Email</th>
                     <th>No. Handphone</th>
                     <th>Pilihan</th>
@@ -49,8 +49,8 @@
                   <?php foreach ($list_admin as $admin) {
                     echo 
                       "<tr>".
-                        "<td>".$admin->nama_admin."</td>".
-                        "<td>".$admin->inisial_admin."</td>".
+                        "<td>".$admin->nama."</td>".
+                        "<td>".$admin->username."</td>".
                         "<td>".$admin->email."</td>".
                         "<td>".$admin->no_hp."</td>".
                         '<td><center>
@@ -62,14 +62,7 @@
                   ?>
                 </tbody>
 
-                <tfoot>
-                  <tr>
-                    <th>Nama Admin</th>
-                    <th>Inisial Admin</th>
-                    <th>Email</th>
-                    <th>No. Handphone</th>
-                    <th>Pilihan</th>
-                  </tr>
+                <tfoot>                  
                 </tfoot>
               </table>
             </div>

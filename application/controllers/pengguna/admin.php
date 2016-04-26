@@ -80,10 +80,12 @@ class Admin extends CI_Controller {
 		{
 			$data['username']      = $this->input->post('username');
 			$data['password']      = md5($this->input->post('password'));
-			$data['nama_admin']    = $this->input->post('nama_admin');
-			$data['inisial_admin'] = $this->input->post('inisial_admin');
+			$data['nama']    = $this->input->post('nama_admin');
+			$data['tempat_lahir'] = $this->input->post('tempat_lahir');
+			$data['tanggal_lahir'] = $this->input->post('tanggal_lahir');
 			$data['email']         = $this->input->post('email');
 			$data['no_hp']         = $this->input->post('no_hp');
+			
 
 			$result = $this->admin_model->insert($data);
 
@@ -106,10 +108,12 @@ class Admin extends CI_Controller {
 
 	public function edit($id = NULL)
 	{
-		$data['nama_admin']    = $this->input->post('nama_admin');
-		$data['inisial_admin'] = $this->input->post('inisial_admin');
-		$data['email']            = $this->input->post('email');
-		$data['no_hp']            = $this->input->post('no_hp');
+		$data['nama']    			= $this->input->post('nama_admin');
+		$data['Username'] 			= $this->input->post('username');
+		$data['tempat_lahir'] 		= $this->input->post('tempat_lahir');
+		$data['tanggal_lahir'] 		= $this->input->post('tanggal_lahir');		
+		$data['email']            	= $this->input->post('email');
+		$data['no_hp']            	= $this->input->post('no_hp');
 
 		$result = $this->admin_model->edit($id, $data);
 

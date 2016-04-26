@@ -6,8 +6,8 @@
           <h1>Administrator</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Pengguna</li>
-            <li class="active">Administrator</li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Pengguna</a></li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Administrator</a></li>
             <li class="active">Lihat</li>
           </ol>
         </section>
@@ -31,13 +31,28 @@
                   <div class="form-group">
                     <label class="col-md-3 control-label">Nama Administrator</label>
                     <div class="col-md-8">
-                      <label class="form-control-static"><?php echo $admin->nama_admin; ?></label>
+                      <label class="form-control-static"><?php echo $admin->nama; ?></label>
                     </div>
                   </div>
+
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Tempat Lahir</label>
+                    <div class="col-md-8">
+                      <label class="form-control-static"><?php echo $admin->tempat_lahir; ?></label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Tanggal Lahir</label>
+                    <div class="col-md-8">
+                      <label class="form-control-static"><?php echo $admin->tanggal_lahir; ?></label>
+                    </div>
+                  </div>
+
                   <div class="form-group">
                     <label class="col-md-3 control-label">Inisial Administrator</label>
                     <div class="col-md-8">
-                      <label class="form-control-static"><?php echo $admin->inisial_admin; ?></label>
+                      <label class="form-control-static"><?php echo $admin->username; ?></label>
                     </div>
                   </div>
                   <div class="form-group">
@@ -73,8 +88,8 @@
                   <div class="form-group">
                     <div class="col-md-12">
                       <center>
-                        <a href="<?php echo base_url('foto/'.$admin->foto_admin); ?>" target="_blank">
-                          <img src="<?php echo base_url('foto/'.$admin->foto_admin); ?>" class="img-rounded" alt="User Image" width="150"/>
+                        <a href="<?php echo base_url('foto/'.$admin->foto); ?>" target="_blank">
+                          <img src="<?php echo base_url('foto/'.$admin->foto); ?>" class="img-rounded" alt="User Image" width="150"/>
                         </a>
                       </center>
                     </div>

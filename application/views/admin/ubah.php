@@ -6,8 +6,8 @@
           <h1>Administrator</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Pengguna</li>
-            <li class="active">Administrator</li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Pengguna</a></li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Administrator</a></li>
             <li class="active">Ubah</li>
           </ol>
         </section>
@@ -48,13 +48,30 @@
                   <div class="form-group">
                     <label for="nama_admin" class="col-md-3 control-label">Nama Administrator*</label>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="nama_admin" name="nama_admin" placeholder="Nama Administrator" value="<?php echo $admin->nama_admin; ?>" required>
+                      <input type="text" class="form-control" id="nama_admin" name="nama_admin" placeholder="Nama Administrator" value="<?php echo $admin->nama; ?>" required>
                     </div>
                   </div>
+
                   <div class="form-group">
-                    <label for="inisial_admin" class="col-md-3 control-label">Inisial Administrator*</label>
+                    <label for="nama_admin" class="col-md-3 control-label">Tempat Lahir*</label>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="inisial_admin" name="inisial_admin" placeholder="Inisial Administrator" value="<?php echo $admin->inisial_admin; ?>" required>
+                      <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" value="<?php echo $admin->tempat_lahir; ?>" required>
+                    </div>
+                  </div>                  
+
+                  <div class="form-group">
+                    <label for="nama_admin" class="col-md-3 control-label">Tanggal Lahir*</label>
+                    <div class="col-md-3">
+                      <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" value="<?php echo $admin->tanggal_lahir; ?>" required>
+                    </div>
+
+                  </div>                                    
+
+
+                  <div class="form-group">
+                    <label for="inisial_admin" class="col-md-3 control-label">Username Administrator*</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control" id="inisial_admin" name="username" placeholder="Inisial Administrator" value="<?php echo $admin->username; ?>" required>
                     </div>
                   </div>
                   <div class="form-group">

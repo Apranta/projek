@@ -16,8 +16,7 @@
 | environments.
 |
 */
-// $config['base_url'] = 'http://localhost/ppds/';
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/km/';
 
 /*
 |--------------------------------------------------------------------------

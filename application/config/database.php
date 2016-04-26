@@ -50,10 +50,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'srivijayaid.com';
-$db['default']['username'] = 'srvjycom_user';
-$db['default']['password'] = 'anestesi';
-$db['default']['database'] = 'srvjycom_pd';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'km_db';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

@@ -6,8 +6,8 @@
           <h1>Administrator</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Pengguna</li>
-            <li class="active">Administrator</li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Pengguna</a></li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Administrator</a></li>
             <li class="active">Hapus</li>
           </ol>
         </section>
@@ -25,13 +25,13 @@
                   <div class="form-group">
                     <label class="col-md-3 control-label">Nama Administrator</label>
                     <div class="col-md-8">
-                      <label class="form-control-static"><?php echo $admin->nama_admin; ?></label>
+                      <label class="form-control-static"><?php echo $admin->nama; ?></label>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-md-3 control-label">Inisial Administrator</label>
+                    <label class="col-md-3 control-label">Username Administrator</label>
                     <div class="col-md-8">
-                      <label class="form-control-static"><?php echo $admin->inisial_admin; ?></label>
+                      <label class="form-control-static"><?php echo $admin->username; ?></label>
                     </div>
                   </div>
                 </div>

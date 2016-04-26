@@ -6,15 +6,9 @@ class Login_model extends CI_Model {
         parent::__construct();
     }
 
-	function cek_login_konsulen($username, $password)
+	function cek_login_pengguna($username, $password)
 	{
-		$query = $this->db->query("SELECT id FROM konsulen WHERE username_konsulen = '{$username}' AND password = '{$password}'");
-		return $query->row();
-	}
-
-	function cek_login_residen($username, $password)
-	{
-		$query = $this->db->query("SELECT id FROM residen WHERE username = '{$username}' AND password = '{$password}'");
+		$query = $this->db->query("SELECT id FROM pengguna WHERE username = '{$username}' AND password = '{$password}'");
 		return $query->row();
 	}
 

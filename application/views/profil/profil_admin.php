@@ -39,13 +39,30 @@
                   <div class="form-group">
                     <label for="nama_admin" class="col-md-3 control-label">Nama Administrator*</label>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="nama_admin" name="nama_admin" placeholder="Nama Administrator" value="<?php echo $admin->nama_admin; ?>" required>
+                      <input type="text" class="form-control" id="nama_admin" name="nama_admin" placeholder="Nama Administrator" value="<?php echo $admin->nama; ?>" required>
                     </div>
                   </div>
+
                   <div class="form-group">
-                    <label for="inisial_admin" class="col-md-3 control-label">Inisial Administrator*</label>
+                    <label for="nama_admin" class="col-md-3 control-label">Tempat Lahir*</label>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="inisial_admin" name="inisial_admin" placeholder="Inisial Administrator" value="<?php echo $admin->inisial_admin; ?>" required>
+                      <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" value="<?php echo $admin->tempat_lahir; ?>" required>
+                    </div>
+                  </div>                  
+
+                  <div class="form-group">
+                    <label for="nama_admin" class="col-md-3 control-label">Tanggal Lahir*</label>
+                    <div class="col-md-3">
+                      <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" value="<?php echo $admin->tanggal_lahir; ?>" required>
+                    </div>
+
+                  </div>                                    
+
+
+                  <div class="form-group">
+                    <label for="inisial_admin" class="col-md-3 control-label">Username Administrator*</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control" id="inisial_admin" name="username" placeholder="Inisial Administrator" value="<?php echo $admin->username; ?>" required>
                     </div>
                   </div>
                   <div class="form-group">
@@ -55,9 +72,9 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="no_hp" class="col-md-3 control-label">No. HP*</label>
+                    <label for="no_hp" class="col-md-3 control-label">No. Handphone*</label>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="No. Handphone" value="<?php echo $admin->no_hp; ?>" required>
+                      <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="No. Handphone GSM" value="<?php echo $admin->no_hp; ?>" required>
                     </div>
                   </div>
                 </div>

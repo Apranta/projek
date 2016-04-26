@@ -41,11 +41,11 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 | System Information
 |--------------------------------------------------------------------------
 */
-define('system_name',			'Sistem Informasi PPDS PD Unsri');
-define('system_description',	'Sistem Informasi Program Pendidikan Dokter Spesialis Penyakit Dalam Universitas Sriwijaya');
-define('system_title',			'PPDS Penyakit Dalam Unsri');
+define('system_name',			'Knowlage Management');
+define('system_description',	'Sistem Informasi di Dinas Perhubungan dan Informatika Prabumulih');
+define('system_title',			'Knowledge Management System Dishubkominfo Kota Prabumulih');
 define('system_version',		'1.0');
-define('system_author',			'Srivijaya');
+define('system_author',			'');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

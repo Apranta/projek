@@ -39,13 +39,7 @@
           <p class="login-box-msg text-red"><?php echo $this->session->flashdata('login');?></p>
         <?php endif; ?>
         <form action="<?php echo base_url('index.php/login/authentication'); ?>" method="POST">
-          <div class="form-group has-feedback">
-            <label>Login sebagai</label>
-            <select class="form-control" name="tipeuser">
-              <option value="residen">Residen</option>
-              <option value="konsulen">Konsulen</option>
-            </select>
-          </div>
+          <input name ="pengguna" type="hidden" value="pengguna">          
           <div class="form-group has-feedback">
             <input name="username" type="text" class="form-control" placeholder="Username" required/>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -63,7 +57,7 @@
 
         <br>
 
-        <center><?php echo system_author; ?> &copy; <?php echo date('Y'); ?> - <?php echo system_title; ?> version <?php echo system_version; ?></center>
+        <center><?php echo system_author; ?>  <?php echo system_title; ?> version <?php echo system_version; ?></center>
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

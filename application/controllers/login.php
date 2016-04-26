@@ -6,10 +6,9 @@ class Login extends CI_Controller {
 	{
 		parent::__construct();
 
-		$this->load->model('login_model');
-		$this->load->model('konsulen_model');
-		$this->load->model('residen_model');
+		$this->load->model('login_model');		
 		$this->load->model('admin_model');
+		$this->load->model('pengguna_model');
 	}
 
 	public function index()
@@ -46,51 +45,35 @@ class Login extends CI_Controller {
 
 	public function authentication()
 	{
-		$tipeuser = $this->input->post('tipeuser');
+		$pengguna = $this->input->post('pengguna');
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
-
-		if ($tipeuser === 'konsulen')
+		
+		if ($pengguna === 'pengguna' )
 		{
-			$cek = $this->login_model->cek_login_konsulen($username, md5($password));
+			$cek = $this->login_model->cek_login_pengguna($username, md5($password));			
 		}
-		elseif ($tipeuser === 'residen')
-		{
-			$cek = $this->login_model->cek_login_residen($username, md5($password));
-		}
+		
 		else
-		{
+		{					
 			var_dump($username);
-			var_dump($password);
 			$cek = $this->login_model->cek_login_admin($username, md5($password));
 		}
 
 		if ($cek != null )
 		{
-			if ($tipeuser === 'konsulen') {
-            	$nama = $this->konsulen_model->get_konsulen_name($username);
-            	$foto = $this->konsulen_model->get_konsulen_foto($username);
+			if ($pengguna === 'pengguna') {
+            	$nama = $this->pengguna_model->get_pengguna_name($username);
+            	$foto = $this->pengguna_model->get_pengguna_foto($username);
+            	$tipeuser = $this->pengguna_model->get_tipeuser($username);
             	$this->session->set_userdata(array(
             		'login' => true,
             		'id' => $cek->id,
             		'username' => $username,
-            		'nama' => $nama,
-            		'tipeuser' => 'konsulen',
+            		'nama' => $nama,            		
+            		'tipeuser' => $tipeuser,
             		'foto' => $foto));
-            }
-		    elseif ($tipeuser === 'residen') {
-            	$nama = $this->residen_model->get_residen_name($username);
-            	$foto = $this->residen_model->get_residen_foto($username);
-            	$tingkat = $this->residen_model->get_residen_tingkat($username);
-            	$this->session->set_userdata(array(
-            		'login' => true,
-            		'id' => $cek->id,
-            		'username' => $username,
-            		'nama' => $nama, 
-            		'tipeuser' => 'residen',
-            		'foto' => $foto,
-            		'tingkat' => $tingkat));
-            }		
+            }		   
             else {
             	$nama = $this->admin_model->get_admin_name($username);
             	$foto = $this->admin_model->get_admin_foto($username);

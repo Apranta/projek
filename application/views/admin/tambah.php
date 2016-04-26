@@ -6,8 +6,8 @@
           <h1>Administrator</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Pengguna</li>
-            <li class="active">Administrator</li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Pengguna</a></li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Administrator</a></li>
             <li class="active">Tambah</li>
           </ol>
         </section>
@@ -64,11 +64,20 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="inisial_admin" class="col-md-3 control-label">Inisial Administrator*</label>
+                    <label for="tempat_lahir" class="col-md-3 control-label">Tempat Lahir*</label>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="inisial_admin" name="inisial_admin" placeholder="Inisial Administrator" required>
+                      <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" required>
                     </div>
                   </div>
+
+                  <div class="form-group">
+                    <label for="tgl_lahir" class="col-md-3 control-label">Tanggal Lahir</label>
+                    <div class="col-md-9">
+                      <input class="form-control tanggal" id="tgl_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" required>                      
+                    </div>
+                  </div>   
+
+
                   <div class="form-group">
                     <label for="email" class="col-md-3 control-label">Email*</label>
                     <div class="col-md-9">

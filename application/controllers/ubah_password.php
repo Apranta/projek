@@ -42,13 +42,13 @@ class Ubah_password extends CI_Controller {
 			$id = $this->session->userdata('id');
 			$temp['password'] = md5($data['password_baru']);
 
-			if($this->session->userdata('tipeuser') == 'konsulen')
+			if($this->session->userdata('tipeuser') == 'pegawai')
 			{
-				$result = $this->password_model->update_password_konsulen($id, $temp);
+				$result = $this->password_model->update_password_pegawai($id, $temp);
 			}
-			elseif($this->session->userdata('tipeuser') == 'residen')
+			elseif($this->session->userdata('tipeuser') == 'sekertaris')
 			{
-				$result = $this->password_model->update_password_residen($id, $temp);
+				$result = $this->password_model->update_password_sekertaris($id, $temp);
 			}
 			elseif($this->session->userdata('tipeuser') == 'administrator')
 			{

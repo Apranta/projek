@@ -15,8 +15,7 @@ class Profil extends CI_Controller {
             redirect('login');
 		}
 
-		$this->load->model('konsulen_model');
-		$this->load->model('residen_model');
+		$this->load->model('pengguna_model');		
 		$this->load->model('admin_model');
 
 		$this->data['judulhalaman'] = "Profil";
@@ -29,17 +28,16 @@ class Profil extends CI_Controller {
 		$this->load->view('header', $this->data);
 		$this->load->view('sidebar', $this->data);
 		
-		if ($this->session->userdata('tipeuser') == 'konsulen')
+		if ($this->session->userdata('tipeuser') == 'sekertaris')
 		{
-			$this->data['konsulen'] = $this->konsulen_model->get_data($this->id);
-
-			$this->load->view('profil/profil_konsulen', $this->data);
+			$this->data['sekertaris'] = $this->pengguna_model->get_data($this->id);
+			$this->load->view('profil/profil_sekertaris', $this->data);
 		}
-		elseif ($this->session->userdata('tipeuser') == 'residen')
+		elseif ($this->session->userdata('tipeuser') == 'pegawai')
 		{
-			$this->data['residen'] = $this->residen_model->get_data($this->id);
+			$this->data['pegawai'] = $this->pengguna_model->get_data($this->id);
 
-			$this->load->view('profil/profil_residen', $this->data);
+			$this->load->view('profil/profil_pegawai', $this->data);
 		}
 		elseif ($this->session->userdata('tipeuser') == 'administrator')
 		{		
@@ -53,36 +51,44 @@ class Profil extends CI_Controller {
 
 	public function edit()
 	{
-		if ($this->session->userdata('tipeuser') == 'konsulen')
-		{
-			$data['username_konsulen'] = $this->input->post('username_konsulen');
-			$data['nama_konsulen']     = $this->input->post('nama_konsulen');
-			$data['inisial_konsulen']  = $this->input->post('inisial_konsulen');
-			$data['email']             = $this->input->post('email');
-			$data['no_hp']             = $this->input->post('no_hp');
-
-			$result = $this->konsulen_model->edit($this->id, $data);
+		if ($this->session->userdata('tipeuser') == 'sekertaris')
+		{			
+			$data['nama']     		= $this->input->post('nama');
+			$data['nip']     		= $this->input->post('nip');
+			$data['tempat_lahir']   = $this->input->post('tempat_lahir');
+			$data['tanggal_lahir']  = date("Y-m-d", strtotime($this->input->post('tanggal_lahir')));
+			$data['jenis_kelamin']  = $this->input->post('jenis_kelamin');
+			$data['divisi']     	= $this->input->post('divisi');
+			$data['jabatan']     	= 'sekertaris';
+			$data['alamat']     	= $this->input->post('alamat');						
+			$data['email']          = $this->input->post('email');
+			$data['no_hp']          = $this->input->post('no_hp');
+			
+			$result = $this->pengguna_model->edit($this->id, $data);
 		}
-		elseif ($this->session->userdata('tipeuser') == 'residen')
-		{
-			$data['username']        = $this->input->post('username');
-			$data['nik']             = $this->input->post('nik');
-			$data['nama_residen']    = $this->input->post('nama_residen');
-			$data['inisial_residen'] = $this->input->post('inisial_residen');
-			$data['email']           = $this->input->post('email');
-			$data['no_gsm']          = $this->input->post('no_gsm');
-			$data['no_cdma']         = $this->input->post('no_cdma');
-			$data['pin_bb']          = $this->input->post('pin_bb');
-			$data['gol_darah']       = $this->input->post('gol_darah');
+		elseif ($this->session->userdata('tipeuser') == 'pegawai')
+		{			
+			$data['nama']     		= $this->input->post('nama');
+			$data['nip']     		= $this->input->post('nip');
+			$data['tempat_lahir']   = $this->input->post('tempat_lahir');
+			$data['tanggal_lahir']  = date("Y-m-d", strtotime($this->input->post('tanggal_lahir')));
+			$data['jenis_kelamin']  = $this->input->post('jenis_kelamin');
+			$data['divisi']     	= $this->input->post('divisi');
+			$data['jabatan']     	= 'pegawai';
+			$data['alamat']     	= $this->input->post('alamat');						
+			$data['email']          = $this->input->post('email');
+			$data['no_hp']          = $this->input->post('no_hp');
 
-			$result = $this->residen_model->edit($this->id, $data);
+			$result = $this->pengguna_model->edit($this->id, $data);
 		}
 		elseif ($this->session->userdata('tipeuser') == 'administrator')
 		{		
-			$data['nama_admin']    = $this->input->post('nama_admin');
-			$data['inisial_admin'] = $this->input->post('inisial_admin');
-			$data['email']         = $this->input->post('email');
-			$data['no_hp']         = $this->input->post('no_hp');
+			$data['nama']    			= $this->input->post('nama_admin');
+			$data['Username'] 			= $this->input->post('username');
+			$data['tempat_lahir'] 		= $this->input->post('tempat_lahir');
+			$data['tanggal_lahir'] 		= $this->input->post('tanggal_lahir');		
+			$data['email']            	= $this->input->post('email');
+			$data['no_hp']            	= $this->input->post('no_hp');
 
 			$result = $this->admin_model->edit($this->id, $data);
 		}
@@ -107,21 +113,21 @@ class Profil extends CI_Controller {
 
 		if($this->upload->do_upload("foto"))
 		{
-			if ($this->session->userdata('tipeuser') == 'konsulen')
+			if ($this->session->userdata('tipeuser') == 'pegawai')
 			{
-				$data['foto_konsulen'] = $this->upload->data()['file_name'];
+				$data['foto'] = $this->upload->data()['file_name'];
 
-				$result = $this->konsulen_model->edit($this->id, $data);
+				$result = $this->pengguna_model->edit($this->id, $data);
 			}
-			elseif ($this->session->userdata('tipeuser') == 'residen')
+			elseif ($this->session->userdata('tipeuser') == 'sekertaris')
 			{
-				$data['foto_residen'] = $this->upload->data()['file_name'];
+				$data['foto'] = $this->upload->data()['file_name'];
 
-				$result = $this->residen_model->edit($this->id, $data);
+				$result = $this->pengguna_model->edit($this->id, $data);
 			}
 			elseif ($this->session->userdata('tipeuser') == 'administrator')
 			{		
-				$data['foto_admin'] = $this->upload->data()['file_name'];
+				$data['foto'] = $this->upload->data()['file_name'];
 
 				$result = $this->admin_model->edit($this->id, $data);
 			}

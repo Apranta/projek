@@ -21,16 +21,16 @@ class Admin_model extends CI_Model {
     function get_admin_id($username) {
         $query = $this -> db -> query("SELECT id FROM administrator WHERE username = '{$username}'");
         return $query->row()->id;
-    }
+    }    
 
-    function get_admin_name($username) {
-        $query = $this -> db -> query("SELECT nama_admin FROM administrator WHERE username = '{$username}'");
-        return $query->row()->nama_admin;
+    function get_admin_name($id) {
+        $query = $this -> db -> query("SELECT nama FROM administrator WHERE id = '{$id}'");
+        return $query->row()->nama;
     }
     
     function get_admin_foto($username) {
-        $query = $this -> db -> query("SELECT foto_admin FROM administrator WHERE username = '{$username}'");
-        return $query->row()->foto_admin;
+        $query = $this -> db -> query("SELECT foto FROM administrator WHERE username = '{$username}'");
+        return $query->row()->foto;
     }
 
     function get_all() {

@@ -6,16 +6,16 @@ class Password_model extends CI_Model {
         parent::__construct();
     }
 
-    function update_password_konsulen($id, $data)
+    function update_password_pegawai($id, $data)
 	{
 		$this->db->where('id', $id);
-		return $this->db->update('konsulen', $data);
+		return $this->db->update('pengguna', $data);
 	}
 
-    function update_password_residen($id, $data)
+    function update_password_sekertaris($id, $data)
 	{
 		$this->db->where('id', $id);
-		return $this->db->update('residen', $data);
+		return $this->db->update('pengguna', $data);
 	}
 
 	function update_password_admin($id, $data)
