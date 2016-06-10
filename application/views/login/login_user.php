@@ -27,12 +27,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="bg-purple">
+  <body id="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <img src="<?php echo base_url('assets'); ?>/img/logo-unsri.png" width="75"/>
+        <img src="<?php echo base_url('assets'); ?>/img/dishub-kominfo.png" width="75"/>
       </div><!-- /.login-logo -->
-      <div class="login-box-body">
+      <div class="login-box-body ">
         <?php if(!$this->session->flashdata('login')): ?>
         <p class="login-box-msg">Selamat datang di<br><b><?php echo system_name; ?></b></p>
         <?php else: ?>
@@ -76,6 +76,10 @@
           increaseArea: '20%' // optional
         });
       });
+    </script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("<?php echo base_url(); ?>assets/img/unsri.jpg", {speed: 500});
     </script>
   </body>
 </html>

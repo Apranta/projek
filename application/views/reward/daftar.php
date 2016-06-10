@@ -75,10 +75,10 @@
                     "<td>".$totalTacit[$i]."</td>".
                     "<td>".$totalEksplisit[$i]."</td>".
                     "<td>".$total[$i]."</td>";
-                    if($total[$i] == 2)
+                    if($total[$i] >= 2)
                     {
                       echo ' <td>                                        
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-nama='.$daftar_pengguna->nama.' data-id='.$daftar_pengguna->id.'>Reward</button>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-nama='.$daftar_pengguna->nama.' data-id='.$daftar_pengguna->id_pengguna.'>Reward</button>
                   </td>  ';  
                       
                     }

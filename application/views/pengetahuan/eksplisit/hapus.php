@@ -64,7 +64,7 @@
                 <div class="box-footer">
                   <center>
                     <h4><i class="icon fa fa-warning"></i> Apakah anda yakin untuk menghapus data ini?</h4>
-                    <a class="btn btn-danger btn-flat" href="<?php echo base_url('index.php/Pengetahuan/eksplisit/delete') . '/' . $eksplisit->id; ?>">Hapus</a>
+                    <a class="btn btn-danger btn-flat" href="<?php echo base_url('index.php/Pengetahuan/eksplisit/delete') . '/' . $eksplisit->id_eksplisit; ?>">Hapus</a>
                     <a class="btn btn-default btn-flat" href="<?php echo base_url('index.php/Pengetahuan/eksplisit'); ?>">Tidak</a>
                   </center>
                 </div>

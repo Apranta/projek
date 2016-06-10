@@ -15,9 +15,7 @@ class Profil extends CI_Controller {
             redirect('login');
 		}
 
-		$this->load->model('pengguna_model');		
-		$this->load->model('admin_model');
-
+		$this->load->model('pengguna_model');				
 		$this->data['judulhalaman'] = "Profil";
 
 		$this->id = $this->session->userdata('id');
@@ -41,7 +39,7 @@ class Profil extends CI_Controller {
 		}
 		elseif ($this->session->userdata('tipeuser') == 'administrator')
 		{		
-			$this->data['admin'] = $this->admin_model->get_data($this->id);
+			$this->data['admin'] = $this->pengguna_model->get_data($this->id);
 
 			$this->load->view('profil/profil_admin', $this->data);
 		}
@@ -83,14 +81,18 @@ class Profil extends CI_Controller {
 		}
 		elseif ($this->session->userdata('tipeuser') == 'administrator')
 		{		
-			$data['nama']    			= $this->input->post('nama_admin');
-			$data['Username'] 			= $this->input->post('username');
-			$data['tempat_lahir'] 		= $this->input->post('tempat_lahir');
-			$data['tanggal_lahir'] 		= $this->input->post('tanggal_lahir');		
-			$data['email']            	= $this->input->post('email');
-			$data['no_hp']            	= $this->input->post('no_hp');
-
-			$result = $this->admin_model->edit($this->id, $data);
+			$data['nama']     		= $this->input->post('nama');
+			$data['nip']     		= $this->input->post('nip');
+			$data['tempat_lahir']   = $this->input->post('tempat_lahir');
+			$data['tanggal_lahir']  = date("Y-m-d", strtotime($this->input->post('tanggal_lahir')));
+			$data['jenis_kelamin']  = $this->input->post('jenis_kelamin');
+			$data['divisi']     	= $this->input->post('divisi');
+			$data['jabatan']     	= 'administrator';
+			$data['alamat']     	= $this->input->post('alamat');						
+			$data['email']          = $this->input->post('email');
+			$data['no_hp']          = $this->input->post('no_hp');
+			
+			$result = $this->pengguna_model->edit($this->id, $data);
 		}
 
 		if ($result) $this->session->set_flashdata('berhasil', 'Ubah data berhasil.');
@@ -129,7 +131,7 @@ class Profil extends CI_Controller {
 			{		
 				$data['foto'] = $this->upload->data()['file_name'];
 
-				$result = $this->admin_model->edit($this->id, $data);
+				$result = $this->pengguna_model->edit($this->id, $data);
 			}
 
 			$this->session->set_userdata(array(

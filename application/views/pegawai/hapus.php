@@ -3,7 +3,7 @@
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-          <h1>Konsulen</h1>
+          <h1>Pegawai</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active"><a href="<?php echo base_url('index.php/pengguna/pegawai'); ?>">Pengguna</a></li>
@@ -39,7 +39,7 @@
                 <div class="box-footer">
                   <center>
                     <h4><i class="icon fa fa-warning"></i> Apakah anda yakin untuk menghapus data ini?</h4>
-                    <a class="btn btn-danger btn-flat" href="<?php echo base_url('index.php/pengguna/pegawai/delete') . '/' . $pegawai->id; ?>">Hapus</a>
+                    <a class="btn btn-danger btn-flat" href="<?php echo base_url('index.php/pengguna/pegawai/delete') . '/' . $pegawai->id_pengguna; ?>">Hapus</a>
                     <a class="btn btn-default btn-flat" href="<?php echo base_url('index.php/pengguna/pegawai'); ?>">Tidak</a>
                   </center>
                 </div>

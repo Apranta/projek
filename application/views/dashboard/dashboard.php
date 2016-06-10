@@ -107,6 +107,7 @@
             echo "<p align = justify>".$text_eksplisit[$temp_index_eksplisit[$i]]->deskripsi."</p>";            
             echo "<strong> Solusi : </strong><br><br>";            
             ?>
+
             <div class="form-group">
                     
                     <div>      
@@ -140,7 +141,6 @@
             echo "<strong> File : </strong><br><br>";            
             ?>
             <div class="form-group">
-                    
                     <div>      
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Tampilkan SOP</button>                
                       <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">

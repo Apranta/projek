@@ -1,9 +1,8 @@
 <?php
 class Eksplisit_Model extends CI_Model 
 {
-	private $primary_key = 'id';
+	private $primary_key = 'id_eksplisit';
 	private $table_name = 'pengetahuan_eksplisit';
-
 	function __construct()
 	{
 		parent::__construct();
@@ -45,7 +44,7 @@ class Eksplisit_Model extends CI_Model
 
     function get_last()
     {
-        $query = $this->db->query("SELECT * FROM pengetahuan_eksplisit ORDER BY id DESC LIMIT 0, 1");
+        $query = $this->db->query("SELECT * FROM pengetahuan_eksplisit ORDER BY id_eksplisit DESC LIMIT 0, 1");
         return $query->row();
     }
 
@@ -55,5 +54,15 @@ class Eksplisit_Model extends CI_Model
         return $query->result();
     }
 
+    function get_all_inner_join()
+    {
+        $query = $this->db->query("SELECT * FROM `pengetahuan_eksplisit` inner join pengguna on pengetahuan_eksplisit.id_pengguna = pengguna.id_pengguna");
+        return $query->result();
+    }
 
+    function get_all_descend()
+    {
+        $query = $this->db->query("SELECT * FROM pengetahuan_eksplisit ORDER BY id_eksplisit DESC");
+        return $query->result();
+    }
 }

@@ -21,7 +21,7 @@
                   <h3 class="box-title">Tambah Pengetahuan</h3>
                 </div>
 
-                <form class="form-horizontal" method="POST" action="<?php echo base_url('index.php/pengetahuan/eksplisit/edit').'/'.$eksplisit->id; ?>" enctype="multipart/form-data">
+                <form class="form-horizontal" method="POST" action="<?php echo base_url('index.php/pengetahuan/eksplisit/edit').'/'.$eksplisit->id_eksplisit; ?>" enctype="multipart/form-data">
                 <div class="box-body">
                   <?php if($this->session->flashdata('berhasil')): ?>
                     <div class="alert alert-success alert-dismissable">

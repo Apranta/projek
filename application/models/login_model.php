@@ -8,13 +8,13 @@ class Login_model extends CI_Model {
 
 	function cek_login_pengguna($username, $password)
 	{
-		$query = $this->db->query("SELECT id FROM pengguna WHERE username = '{$username}' AND password = '{$password}'");
+		$query = $this->db->query("SELECT id_pengguna FROM pengguna WHERE username = '{$username}' AND password = '{$password}'");
 		return $query->row();
 	}
 
 	function cek_login_admin($username, $password)
 	{
-		$query = $this->db->query("SELECT id FROM administrator WHERE username = '{$username}' AND password = '{$password}'");
+		$query = $this->db->query("SELECT id_pengguna FROM administrator WHERE username = '{$username}' AND password = '{$password}'");
 		return $query->row();
 	}
 

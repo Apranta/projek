@@ -14,9 +14,7 @@ class KomentarTacit extends CI_Controller {
 		}		
 
 		$this->load->model('komentar_model/komentar_tacit_model');
-		$this->load->model('pengguna_model');
-		$this->load->model('admin_model');
-
+		$this->load->model('pengguna_model');		
 
 	}
 
@@ -35,13 +33,9 @@ class KomentarTacit extends CI_Controller {
 
 		$this->komentar_tacit_model->insert($this->data);		    
 	}
-
-	
 	
 	function lihat()
-	{
-		
-
+	{		
 		$result = $this->komentar_tacit_model->get_komentraById($this->input->post('id'));				
 		if($result)
 		{
@@ -74,7 +68,7 @@ class KomentarTacit extends CI_Controller {
 						}
 						else
 						{
-							$name = $this->admin_model->get_admin_name($komentar->id_pengguna);
+							$name = $this->pengguna_model->get_pengguna_name_by_id($komentar->id_pengguna);																										
 							$name = "Admin -".$name;
 						}
 						echo"

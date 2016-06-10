@@ -1,7 +1,7 @@
 <?php
 class Reward_model extends CI_Model {
 
-    private $primary_key = 'id';
+    private $primary_key = 'id_reward';
     private $table_name = 'reward';
 
 	function __construct() {

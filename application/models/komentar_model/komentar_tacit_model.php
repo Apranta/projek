@@ -1,7 +1,7 @@
 <?php
 class Komentar_tacit_model extends CI_Model {
 
-    private $primary_key = 'id';
+    private $primary_key = 'id_komentar_tacit';
     private $table_name = 'komentar_tacit';
 
 	function __construct() {

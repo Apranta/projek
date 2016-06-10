@@ -37,33 +37,34 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
-</head>
-  
+
+</head> 
 <body class="skin-purple">
   <div class="wrapper">
-
+    
     <header class="main-header">
+
+            
+
       <!-- Logo -->
-      <a href="<?php echo base_url(); ?>" class="logo"> Dishubkominfo </a>
+      <a class="logo"></a>
       <!-- Header Navbar: style can be found in header.less -->
-      <nav class="navbar navbar-static-top" role="navigation">
-        <!-- Sidebar toggle button-->
-        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-          <span class="sr-only">Toggle navigation</span>
-        </a>
-        <!-- Navbar Right Menu -->
+      <nav class="navbar navbar-static-top" role="navigation" style = "margin-bottom:10px; border: 1px solid #8E8EB8;">        
+        <!-- Sidebar toggle button-->        
+        <!-- Navbar Right Menu -->        
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
             <!-- Date & Time -->
+              
             <li>
                 <a id="datetime"> </a>
             </li>
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="<?php echo base_url('foto/'.$this->session->userdata('foto')); ?>" class="user-image" alt="User Image"/>
-                <span class="hidden-xs"><?php echo $this->session->userdata('nama');?></span>
+                <img src="<?php echo base_url('foto/'.$this->session->userdata('foto')); ?>" class="user-image" alt="User Image"/>                
               </a>
+              <label>logout</label>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
@@ -83,5 +84,10 @@
             </li>
           </ul>
         </div>
+        <center><h1 style = "margin-bottom:10px; margin-top:50px; color : azure">KNOWLEDGE MANAGEMENT</h1></center>
+        <center><h5 style = "margin-bottom:10px;  color : azure">DISHUB-KOMINFO</h5></center>
       </nav>
     </header>
+    <br>      
+      <br>
+      

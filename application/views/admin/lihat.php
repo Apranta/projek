@@ -71,7 +71,7 @@
 
                 <div class="box-footer">
                   <center>
-                    <a class="btn btn-warning btn-flat" href="<?php echo base_url('index.php/pengguna/admin/ubah') . '/' . $admin->id; ?>">Ubah</a>
+                    <a class="btn btn-warning btn-flat" href="<?php echo base_url('index.php/pengguna/admin/ubah') . '/' . $admin->id_pengguna; ?>">Ubah</a>
                     <a class="btn btn-default btn-flat" href="<?php echo base_url('index.php/pengguna/admin'); ?>">Kembali</a>
                   </center>
                 </div>

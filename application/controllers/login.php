@@ -6,8 +6,7 @@ class Login extends CI_Controller {
 	{
 		parent::__construct();
 
-		$this->load->model('login_model');		
-		$this->load->model('admin_model');
+		$this->load->model('login_model');		 		
 		$this->load->model('pengguna_model');
 	}
 
@@ -22,26 +21,7 @@ class Login extends CI_Controller {
 			redirect('dashboard');
 		}
 	}
-
-	public function admin()
-	{
-		if ( ! $this->session->userdata('login'))
-		{
-			$this->load->view('login/login_admin');
-		}
-		else
-		{
-			if ($this->session->userdata('tipeuser') != "administrator")
-			{
-				$this->session->sess_destroy();
-				redirect('login/admin');
-			}
-			else
-			{
-				redirect('dashboard');
-			}
-		}
-	}
+	
 
 	public function authentication()
 	{
@@ -68,23 +48,12 @@ class Login extends CI_Controller {
             	$tipeuser = $this->pengguna_model->get_tipeuser($username);
             	$this->session->set_userdata(array(
             		'login' => true,
-            		'id' => $cek->id,
+            		'id' => $cek->id_pengguna,
             		'username' => $username,
             		'nama' => $nama,            		
             		'tipeuser' => $tipeuser,
             		'foto' => $foto));
-            }		   
-            else {
-            	$nama = $this->admin_model->get_admin_name($username);
-            	$foto = $this->admin_model->get_admin_foto($username);
-            	$this->session->set_userdata(array(
-            		'login' => true,
-            		'id' => $cek->id,
-            		'username' => $username,
-            		'nama' => $nama,
-            		'tipeuser' => 'administrator',
-            		'foto' => $foto));
-            }
+            }		              
             redirect('dashboard');
 		}
 		else

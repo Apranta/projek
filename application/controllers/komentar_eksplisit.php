@@ -14,8 +14,7 @@ class Komentar_eksplisit extends CI_Controller {
 		}		
 
 		$this->load->model('komentar_model/komentar_eksplisit_model');
-		$this->load->model('pengguna_model');
-		$this->load->model('admin_model');
+		$this->load->model('pengguna_model');		
 
 
 	}
@@ -74,7 +73,7 @@ class Komentar_eksplisit extends CI_Controller {
 						}
 						else
 						{
-							$name = $this->admin_model->get_admin_name($komentar->id_pengguna);
+							$name = $this->pengguna_model->get_pengguna_name_by_id($komentar->id_pengguna);																										
 							$name = "Admin -".$name;
 						}
 						echo"

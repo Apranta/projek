@@ -3,11 +3,11 @@
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-          <h1>Admin</h1>
+          <h1>admin</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Pengguna</a></li>
-            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Administrator</a></li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">admin</a></li>
           </ol>
         </section>
 
@@ -15,7 +15,7 @@
         <section class="content">
           <div class='box box-primary'>
             <div class='box-header'>
-              <a class="btn btn-primary btn-flat" href="<?php echo base_url('index.php/pengguna/admin/tambah'); ?>"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Admin</a>
+              <a class="btn btn-primary btn-flat" href="<?php echo base_url('index.php/pengguna/admin/tambah'); ?>"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Tambah admin</a>
             </div>
 
             <div class="box-body">
@@ -34,11 +34,11 @@
                 </div>
               <?php endif; ?>
 
-              <table class="table table-bordered table-hover">
+              <table id="table_admin" class="table table-bordered table-hover">
                 <thead>
                   <tr>
-                    <th>Nama Admin</th>
-                    <th>Username</th>
+                    <th>Nama admin</th>
+                    <th>NIP</th>                  
                     <th>Email</th>
                     <th>No. Handphone</th>
                     <th>Pilihan</th>
@@ -46,16 +46,17 @@
                 </thead>
                 
                 <tbody>
-                  <?php foreach ($list_admin as $admin) {
+
+                  <?php foreach ($list_admin as $admin) {                    
                     echo 
                       "<tr>".
                         "<td>".$admin->nama."</td>".
-                        "<td>".$admin->username."</td>".
+                        "<td>".$admin->nip."</td>".
                         "<td>".$admin->email."</td>".
                         "<td>".$admin->no_hp."</td>".
                         '<td><center>
-                        <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/admin/lihat/" . $admin->id) . '"><i class="ion ion-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/admin/ubah/" . $admin->id) . '"><i class="ion ion-edit"></i></a>';
-                    echo '<a class="btn btn-danger btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/admin/hapus/" . $admin->id) . '"><i class="ion ion-trash-a"></i></a>';
+                        <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/admin/lihat/" . $admin->id_pengguna) . '"><i class="ion ion-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/admin/ubah/" . $admin->id_pengguna) . '"><i class="ion ion-edit"></i></a>';
+                    echo '<a class="btn btn-danger btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/admin/hapus/" . $admin->id_pengguna) . '"><i class="ion ion-trash-a"></i></a>';
                     echo '</center></td>'.
                       "</tr>";
                   }

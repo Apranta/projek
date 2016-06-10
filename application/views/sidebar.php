@@ -1,5 +1,11 @@
+
     <aside class="main-sidebar">
       <!-- sidebar: style can be found in sidebar.less -->
+      
+      <center><img  style ="margin-top:-30px; margin-bottom:20px"src="<?php echo base_url('assets/img/dishub-kominfo.png');?>" class="img-rounded" alt="User Image" width="100px"  style{margin-top:0px}/>  </center>
+
+
+    
       <section class="sidebar">
         <!-- Sidebar user panel -->
         <div class="user-panel">
@@ -136,7 +142,6 @@
               <span>Ubah Password</span>
             </a>
           </li>
-          
       </section>
       
     </aside>

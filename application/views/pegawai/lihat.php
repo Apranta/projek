@@ -99,7 +99,7 @@
 
                 <div class="box-footer">
                   <center>
-                    <a class="btn btn-warning btn-flat" href="<?php echo base_url('index.php/pengguna/pegawai/ubah') . '/' . $pegawai->id; ?>">Ubah</a>
+                    <a class="btn btn-warning btn-flat" href="<?php echo base_url('index.php/pengguna/pegawai/ubah') . '/' . $pegawai->id_pengguna; ?>">Ubah</a>
                     <a class="btn btn-default btn-flat" href="<?php echo base_url('index.php/pengguna/pegawai'); ?>">Kembali</a>
                   </center>
                 </div>

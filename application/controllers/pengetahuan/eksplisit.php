@@ -20,14 +20,22 @@ Class Eksplisit extends CI_Controller
 		$this->daftar();
 	}
 
+	public function detail()
+	{
+		$this->data['detail_eksplisit'] = $this->eksplisit_model->get_data($this->uri->segment(4));
+		$this->load->view('slate/detail_eksplisit', $this->data);
+	}
+
 	function daftar()
 	{
-		$this->data['list_eksplisit'] = $this->eksplisit_model->get_all();		
+		$this->data['list_eksplisit'] = $this->eksplisit_model->get_all_inner_join();		
 
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('pengetahuan/eksplisit/daftar', $this->data);
-		$this->load->view('footer');
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('pengetahuan/eksplisit/daftar', $this->data);
+		//$this->load->view('footer');
+
+		$this->load->view('slate/daftar_eksplisit', $this->data);
 	}
 
 	function lihat($id = NULL)
@@ -41,10 +49,11 @@ Class Eksplisit extends CI_Controller
 
 	function tambah()
 	{
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('pengetahuan/eksplisit/tambah', $this->data);
-		$this->load->view('footer');		
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('pengetahuan/eksplisit/tambah', $this->data);
+		//$this->load->view('footer');		
+		$this->load->view('slate/tambah_eksplisit', $this->data);	
 	}
 
 	function insert()

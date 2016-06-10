@@ -55,7 +55,7 @@
 
                 <div class="box-footer">
                   <center>
-                    <a class="btn btn-warning btn-flat" href="<?php echo base_url('index.php/Pengetahuan/tacit/ubah') . '/' . $tacit->id; ?>">Ubah</a>
+                    <a class="btn btn-warning btn-flat" href="<?php echo base_url('index.php/Pengetahuan/tacit/ubah') . '/' . $tacit->id_tacit; ?>">Ubah</a>
                     <a class="btn btn-default btn-flat" href="<?php echo base_url('index.php/pengetahuan/tacit'); ?>">Kembali</a>
                   </center>
                 </div>

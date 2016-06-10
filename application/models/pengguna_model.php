@@ -1,7 +1,7 @@
 <?php
 class Pengguna_model extends CI_Model {
 
-    private $primary_key = 'id';
+    private $primary_key = 'id_pengguna';
     private $table_name = 'pengguna';
 
 	function __construct() {
@@ -19,8 +19,8 @@ class Pengguna_model extends CI_Model {
     }
 
     function get_pengguna_id($username) {
-        $query = $this -> db -> query("SELECT id FROM pengguna WHERE username = '{$username}'");
-        return $query->row()->id;
+        $query = $this -> db -> query("SELECT id_pengguna FROM pengguna WHERE username = '{$username}'");
+        return $query->row()->id_pengguna;
     }
 
     function get_jabatan($username) {
@@ -35,7 +35,7 @@ class Pengguna_model extends CI_Model {
     }
    
     function get_pengguna_name_by_id($id) {
-        $query = $this -> db -> query("SELECT nama FROM pengguna WHERE id = '{$id}'");
+        $query = $this -> db -> query("SELECT nama FROM pengguna WHERE id_pengguna = '{$id}'");
         return $query->row()->nama;
     }
 
@@ -45,7 +45,7 @@ class Pengguna_model extends CI_Model {
     }
 
     function get_pengguna_foto_by_id($id) {
-        $query = $this -> db -> query("SELECT foto FROM pengguna WHERE id = '{$id}'");
+        $query = $this -> db -> query("SELECT foto FROM pengguna WHERE id_pengguna = '{$id}'");
         return $query->row()->foto;   
     }
 
@@ -61,6 +61,12 @@ class Pengguna_model extends CI_Model {
     }
 
     function get_pegawai($jabatan)
+    {        
+        $query = $this -> db -> query("SELECT * FROM pengguna WHERE tipeuser = '{$jabatan}'");     
+        return $query->result();
+    }
+
+    function get_admin($jabatan)
     {        
         $query = $this -> db -> query("SELECT * FROM pengguna WHERE tipeuser = '{$jabatan}'");     
         return $query->result();

@@ -55,8 +55,8 @@
                         "<td>".$pegawai->email."</td>".
                         "<td>".$pegawai->no_hp."</td>".
                         '<td><center>
-                        <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/pegawai/lihat/" . $pegawai->id) . '"><i class="ion ion-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/pegawai/ubah/" . $pegawai->id) . '"><i class="ion ion-edit"></i></a>';
-                    echo '<a class="btn btn-danger btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/pegawai/hapus/" . $pegawai->id) . '"><i class="ion ion-trash-a"></i></a>';
+                        <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/pegawai/lihat/" . $pegawai->id_pengguna) . '"><i class="ion ion-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/pegawai/ubah/" . $pegawai->id_pengguna) . '"><i class="ion ion-edit"></i></a>';
+                    echo '<a class="btn btn-danger btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengguna/pegawai/hapus/" . $pegawai->id_pengguna) . '"><i class="ion ion-trash-a"></i></a>';
                     echo '</center></td>'.
                       "</tr>";
                   }

@@ -1,7 +1,7 @@
 <?php
 class Komentar_eksplisit_model extends CI_Model {
 
-    private $primary_key = 'id';
+    private $primary_key = 'id_komentar_eksplisit';
     private $table_name = 'komentar_eksplisit';
 
 	function __construct() {

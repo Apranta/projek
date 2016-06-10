@@ -58,7 +58,7 @@ Class Reward extends CI_Controller
 			{
 				$totalTacit[$i] 		= 0;
 				$totalEksplisit[$i] 	= 0;
-				$id 					= $pengguna[$i]->id;
+				$id 					= $pengguna[$i]->id_pengguna;
 				$totalTacit[$i] 		= $this->tacit_model->count_tacit_byId($id);
 				$totalEksplisit[$i] 	= $this->eksplisit_model->count_eksplisit_byId($id);
 				$totalPengetahuan[$i] 	= $totalTacit[$i]+$totalEksplisit[$i];				

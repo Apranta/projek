@@ -1,46 +1,13 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
 Class Booyermore extends CI_Controller
 {
-    public function __construct()
-    {
-        parent::__construct();    
+  public function __construct()
+  {
+    parent::__construct();    
         define('ALPHABET_SIZE',1);
     }
-    
-    public function makeCharTable($string) 
-    {
-        $len = strlen($string);
-        $table = array();
-        for ($i=0; $i < $len; $i++) 
-        { 
-            $table[$string[$i]] = $len - $i - 1; 
-        }
-        return $table;
-    }
-    
-    public function BoyerMoore($text, $pattern) 
-    {            
-        $patlen = strlen($pattern);
-        $textlen = strlen($text);
-        $table = $this->makeCharTable($pattern);
-        for ($i=$patlen-1; $i < $textlen;) 
-        { 
-            $t = $i;
-            for ($j=$patlen-1; $pattern[$j]==$text[$i]; $j--,$i--) 
-            { 
-                if($j == 0) return $i;
-            }
-            $i = $t;
-            if(array_key_exists($text[$i], $table))
-                $i = $i + max($table[$text[$i]], 1);
-            else
-                $i += $patlen;
-        }
-        return -1;
-    }    
-
-   public function suffixes($pattern, &$suffixes)
+        
+  public function suffixes($pattern, &$suffixes)
   {
    $m = strlen($pattern);
  
@@ -63,13 +30,7 @@ Class Booyermore extends CI_Controller
       }
    }
 }
- 
-/**
- * Fills in the array of bad characters.
- *
- * @param string $pattern
- * @param array  $badChars
- */
+
 public function badCharacters($pattern, &$badChars)
 {
    $m = strlen($pattern);
@@ -79,12 +40,6 @@ public function badCharacters($pattern, &$badChars)
    }
 }
  
-/**
- * Fills in the array of good suffixes
- *
- * @param string $pattern
- * @param array  $goodSuffixes
- */
 public function goodSuffixes($pattern, &$goodSuffixes)
 {
    $m     = strlen($pattern);
@@ -111,12 +66,6 @@ public function goodSuffixes($pattern, &$goodSuffixes)
    }
 }
  
-/**
- * Performs a search of the pattern into a given text
- *
- * @param string $pattern
- * @param string $text
- */
 function boyer_moore($pattern, $text)
 {
    $n = strlen($text);
@@ -148,7 +97,5 @@ function boyer_moore($pattern, $text)
       }
    }
    return -1;
+}  
 }
-    
-}
-

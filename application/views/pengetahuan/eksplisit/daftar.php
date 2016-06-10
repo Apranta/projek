@@ -38,6 +38,7 @@
                 <thead>
                   <tr>
                     <th>Tanggal </th>
+                    <th>Nama </th>
                     <th>Judul Eksplisit</th>
                     <th>Deskripsi</th>
                     <th>File</th>  
@@ -50,12 +51,15 @@
                     echo 
                       "<tr>".
                         "<td>".$Eksplisit->tanggal_input."</td>".
+                        "<td>".$Eksplisit->nama."</td>".
                         "<td>".$Eksplisit->judul."</td>".
                         "<td>".$Eksplisit->deskripsi."</td>".
                         "<td>".$Eksplisit->file."</td>".                        
                         '<td><center>
-                        <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/lihat/" . $Eksplisit->id) . '"><i class="ion ion-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/ubah" .'/'. $Eksplisit->id) . '"><i class="ion ion-edit"></i></a>';
-                    echo '<a class="btn btn-danger btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/hapus/" . $Eksplisit->id) . '"><i class="ion ion-trash-a"></i></a>';
+                        <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/lihat/" . $Eksplisit->id_eksplisit) . '"><i class="ion ion-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/ubah" .'/'. $Eksplisit->id_eksplisit) . '"><i class="ion ion-edit"></i></a>';
+                    if ($this->session->userdata('tipeuser') == 'administrator') {                      
+                      echo '<a class="btn btn-danger btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/hapus/" . $Eksplisit->id_eksplisit) . '"><i class="ion ion-trash-a"></i></a>';
+                    }
                     echo '</center></td>'.
                       "</tr>";
                   }
@@ -70,3 +74,4 @@
           </div>
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
+

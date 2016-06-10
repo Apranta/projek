@@ -22,6 +22,21 @@ class Dashboard extends CI_Controller {
 
   public function index()
   {   
+    //$this->data['last_tacit'] = $this->tacit_model->get_last();
+    //$this->data['last_eksplisit'] = $this->eksplisit_model->get_last();
+
+    $this->data['list_tacit'] = $this->tacit_model->get_all_descend();
+    $this->data['list_eksplisit'] = $this->eksplisit_model->get_all_descend();
+
+    //$this->load->view('header', $this->data);
+    //$this->load->view('sidebar', $this->data);
+    //$this->load->view('dashboard/dashboard', $this->data);
+    //$this->load->view('footer');
+    $this->load->view('slate/dashboard/dashboard', $this->data);
+  }
+
+  public function index2()
+  {
     $this->data['last_tacit'] = $this->tacit_model->get_last();
     $this->data['last_eksplisit'] = $this->eksplisit_model->get_last();
 
@@ -73,10 +88,6 @@ class Dashboard extends CI_Controller {
             $this->data['temp_index_tacit'] = $this->sortIndex(max(array_keys($text_tacit)),$temp);
         }        
         
-
-
-
-
         //Eksplisit
 
         $text_eksplisit = $this->eksplisit_model->get_all();
@@ -113,10 +124,6 @@ class Dashboard extends CI_Controller {
         
         }
         
-
-
-
-
         $this->load->view('header', $this->data);
         $this->load->view('sidebar', $this->data);
         $this->load->view('dashboard/dashboard', $this->data);

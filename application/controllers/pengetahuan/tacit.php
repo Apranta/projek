@@ -20,15 +20,22 @@ Class Tacit extends CI_Controller
 		$this->daftar();
 	}
 
+	public function detail()
+	{
+		$this->data['detail_tacit'] = $this->tacit_model->get_data($this->uri->segment(4));
+		$this->load->view('slate/detail', $this->data);
+	}
+
 	function daftar()
 	{
-		$this->data['list_tacit'] = $this->tacit_model->get_all();
+		$this->data['list_tacit'] = $this->tacit_model->get_all_inner_join();
 		//var_dump($data['list_tacit']);
 
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('pengetahuan/tacit/daftar', $this->data);
-		$this->load->view('footer');
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('pengetahuan/tacit/daftar', $this->data);
+		//$this->load->view('footer');
+		$this->load->view('slate/daftar_tacit', $this->data);
 	}
 
 	function lihat($id = NULL)
@@ -42,10 +49,11 @@ Class Tacit extends CI_Controller
 
 	function tambah()
 	{
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('pengetahuan/tacit/tambah', $this->data);
-		$this->load->view('footer');		
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('pengetahuan/tacit/tambah', $this->data);
+		//$this->load->view('footer');	
+		$this->load->view('slate/tambah_tacit', $this->data);	
 	}
 
 	function insert()

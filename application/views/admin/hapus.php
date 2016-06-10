@@ -3,11 +3,11 @@
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-          <h1>Administrator</h1>
+          <h1>admin</h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo base_url(); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Pengguna</a></li>
-            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">Administrator</a></li>
+            <li class="active"><a href="<?php echo base_url('index.php/pengguna/admin'); ?>">admin</a></li>
             <li class="active">Hapus</li>
           </ol>
         </section>
@@ -18,20 +18,20 @@
             <div class="col-sm-6 col-md-6">
               <div class="box box-primary">
                 <div class="box-header">
-                  <h3 class="box-title">Hapus Administrator</h3>
+                  <h3 class="box-title">Hapus admin</h3>
                 </div>
 
                 <div class="box-body form-horizontal">
                   <div class="form-group">
-                    <label class="col-md-3 control-label">Nama Administrator</label>
+                    <label class="col-md-3 control-label">Nama admin</label>
                     <div class="col-md-8">
-                      <label class="form-control-static"><?php echo $admin->nama; ?></label>
+                      <label class="form-control-static"><?php echo $admin->nama ?></label>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-md-3 control-label">Username Administrator</label>
+                    <label class="col-md-3 control-label">NIP</label>
                     <div class="col-md-8">
-                      <label class="form-control-static"><?php echo $admin->username; ?></label>
+                      <label class="form-control-static"><?php echo $admin->nip; ?></label>
                     </div>
                   </div>
                 </div>

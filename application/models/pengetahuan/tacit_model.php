@@ -1,7 +1,7 @@
 <?php
 class Tacit_model extends CI_Model 
 {
-	private $primary_key = 'id';
+	private $primary_key = 'id_tacit';
 	private $table_name = 'pengetahuan_tacit';
 
 	function __construct()
@@ -45,8 +45,14 @@ class Tacit_model extends CI_Model
 
     function get_last()
     {
-        $query = $this->db->query("SELECT * FROM pengetahuan_tacit ORDER BY id DESC LIMIT 0, 1");
+        $query = $this->db->query("SELECT * FROM pengetahuan_tacit ORDER BY id_tacit DESC LIMIT 0, 1");
         return $query->row();
+    }
+
+    function get_all_inner_join()
+    {
+        $query = $this->db->query("SELECT * FROM `pengetahuan_tacit` inner join pengguna on pengetahuan_tacit.id_pengguna = pengguna.id_pengguna");
+        return $query->result();
     }
 
     function get_all() 
@@ -55,5 +61,9 @@ class Tacit_model extends CI_Model
         return $query->result();
     }
 
-
+    function get_all_descend()
+    {
+        $query = $this->db->query("SELECT * FROM pengetahuan_tacit ORDER BY id_tacit DESC");
+        return $query->result();
+    }
 }

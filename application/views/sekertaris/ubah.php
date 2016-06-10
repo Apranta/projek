@@ -21,7 +21,7 @@
                   <h3 class="box-title">Ubah sekertaris</h3>
                 </div>
 
-                <form class="form-horizontal" method="POST" action="<?php echo base_url('index.php/pengguna/sekertaris/edit/' . $sekertaris->id); ?>">
+                <form class="form-horizontal" method="POST" action="<?php echo base_url('index.php/pengguna/sekertaris/edit/' . $sekertaris->id_pengguna); ?>">
                 <div class="box-body">
                   <?php if($this->session->flashdata('berhasil')): ?>
                     <div class="alert alert-success alert-dismissable">
@@ -138,7 +138,7 @@
                   <h3 class="box-title">Password sekertaris</h3>
                 </div>
                 
-                <form class="form-horizontal" action="<?php echo base_url("index.php/pengguna/sekertaris/edit_password/" . $sekertaris->id); ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                <form class="form-horizontal" action="<?php echo base_url("index.php/pengguna/sekertaris/edit_password/" . $sekertaris->id_pengguna); ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                 <div class="box-body">
                   <?php if($this->session->flashdata('berhasil_password')): ?>
                     <div class="alert alert-success alert-dismissable">
