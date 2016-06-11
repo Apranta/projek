@@ -41,4 +41,9 @@ class Komentar_eksplisit_model extends CI_Model {
     function delete($id) {
         return $this->db->delete($this->table_name, array($this->primary_key => $id));
     }
+
+    function get_data_descend($id_eksplisit) {
+        $query = $this->db->query("SELECT * FROM komentar_eksplisit WHERE id_eksplisit=".$id_eksplisit." ORDER BY id_komentar_eksplisit DESC");
+        return $query->result();
+    }
 }

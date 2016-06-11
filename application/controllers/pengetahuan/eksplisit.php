@@ -23,6 +23,9 @@ Class Eksplisit extends CI_Controller
 	public function detail()
 	{
 		$this->data['detail_eksplisit'] = $this->eksplisit_model->get_data($this->uri->segment(4));
+		$this->load->model('komentar_model/komentar_eksplisit_model');
+		$this->data['komentar_eksplisit'] = $this->komentar_eksplisit_model->get_data_descend($this->uri->segment(4));
+		$this->load->model('pengguna_model');
 		$this->load->view('slate/detail_eksplisit', $this->data);
 	}
 

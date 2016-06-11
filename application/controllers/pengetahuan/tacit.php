@@ -23,6 +23,9 @@ Class Tacit extends CI_Controller
 	public function detail()
 	{
 		$this->data['detail_tacit'] = $this->tacit_model->get_data($this->uri->segment(4));
+		$this->load->model('komentar_model/komentar_tacit_model');
+		$this->data['komentar_tacit'] = $this->komentar_tacit_model->get_data_descend($this->uri->segment(4));
+		$this->load->model('pengguna_model');
 		$this->load->view('slate/detail', $this->data);
 	}
 

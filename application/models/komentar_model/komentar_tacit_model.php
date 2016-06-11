@@ -19,7 +19,7 @@ class Komentar_tacit_model extends CI_Model {
         return $query->result();
     }
 
-    function get_komentraById($id_tacit) {
+    function get_komentarById($id_tacit) {
         $this->db->where('id_tacit', $id_tacit);
         $query = $this->db->get($this->table_name);
         return $query->result();
@@ -40,5 +40,10 @@ class Komentar_tacit_model extends CI_Model {
 
     function delete($id) {
         return $this->db->delete($this->table_name, array($this->primary_key => $id));
+    }
+
+    function get_data_descend($id_tacit) {
+        $query = $this->db->query("SELECT * FROM komentar_tacit WHERE id_tacit=".$id_tacit." ORDER BY id_komentar_tacit DESC");
+        return $query->result();
     }
 }

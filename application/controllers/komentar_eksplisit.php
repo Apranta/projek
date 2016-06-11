@@ -21,7 +21,7 @@ class Komentar_eksplisit extends CI_Controller {
 
 	function index()
 	{
-		$this-->tambah_komentar();
+		$this->tambah_komentar();
 	}
 
 	function tambah_komentar()
@@ -32,7 +32,8 @@ class Komentar_eksplisit extends CI_Controller {
 		$this->data['isi_komentar'] = $this->input->post('komentar');
 		$this->data['tgl_komentar'] = date("Y-m-d");
 
-		$this->komentar_eksplisit_model->insert($this->data);		    
+		$this->komentar_eksplisit_model->insert($this->data);
+		redirect('pengetahuan/eksplisit/detail/'.$this->data['id_eksplisit']);		    
 	}
 
 	

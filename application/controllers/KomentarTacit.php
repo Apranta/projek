@@ -20,7 +20,7 @@ class KomentarTacit extends CI_Controller {
 
 	function index()
 	{
-		$this-->tambah_komentar();
+		$this->tambah_komentar();
 	}
 
 	function tambah_komentar()
@@ -31,7 +31,8 @@ class KomentarTacit extends CI_Controller {
 		$this->data['isi_komentar'] = $this->input->post('komentar');
 		$this->data['tgl_komentar'] = date("Y-m-d");
 
-		$this->komentar_tacit_model->insert($this->data);		    
+		$this->komentar_tacit_model->insert($this->data);	
+		redirect('pengetahuan/tacit/detail/'.$this->data['id_tacit']);	    
 	}
 	
 	function lihat()
