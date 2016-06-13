@@ -18,7 +18,7 @@
 		<img src="<?= base_url('assets/slate/img/dishub-kominfo.png') ?>" width="100" height="110">
 		<h2>Selamat datang di Knowledge Management System</h2>
 	</div>
-	<div class="row" id="search_section">
+	<div id="search_section">
 		<div class="form-group" id="search_form">
 		  <div class="input-group">
 		    <input class="form-control" type="text" placeholder="Cari pengetahuan">
@@ -41,7 +41,12 @@
 					<div class="list-group">
 					  <a href="<?= base_url('index.php/pengetahuan/tacit/detail/'.$row->id_tacit) ?>" class="list-group-item">
 					    <h5 class="list-group-item-heading"><?= $row->judul ?></h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					    <p class="list-group-item-text">- 
+					    	<?php  
+					    		$pengguna = $this->pengguna_model->get_pengguna_name_by_id($row->id_pengguna);
+					    		echo $pengguna;
+					    	?>
+					    </p>
 					  </a>
 					</div>
 				<?php endforeach; ?>
@@ -54,7 +59,12 @@
 					<div class="list-group">
 					  <a href="<?= base_url('index.php/pengetahuan/eksplisit/detail/'.$row->id_eksplisit) ?>" class="list-group-item">
 					    <h5 class="list-group-item-heading"><?= $row->judul ?></h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					    <p class="list-group-item-text">- 
+					    	<?php  
+					    		$pengguna = $this->pengguna_model->get_pengguna_name_by_id($row->id_pengguna);
+					    		echo $pengguna;
+					    	?>
+					    </p>
 					  </a>
 					</div>
 				<?php endforeach; ?>

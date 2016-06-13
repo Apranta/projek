@@ -21,10 +21,11 @@ class Ubah_password extends CI_Controller {
 
 	public function index()
 	{		
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('ubah_password');
-		$this->load->view('footer');
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('ubah_password');
+		//$this->load->view('footer');
+		$this->load->view('slate/ubah_password');
 	}
 
 	public function update()

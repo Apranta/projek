@@ -6,10 +6,5 @@
 	<link rel="icon" type="image/png" href="<?php echo base_url('assets'); ?>/img/favicon.png">
 	<script type="text/javascript" src="<?= base_url('assets/slate/js/jquery-2.1.4.js') ?>"></script>
 	<script type="text/javascript" src="<?= base_url('assets/slate/js/bootstrap.min.js') ?>"></script>
-	<style type="text/css">
-		* {
-			font-size: 1.2rem;
-		}
-	</style>
 </head>
 <body>

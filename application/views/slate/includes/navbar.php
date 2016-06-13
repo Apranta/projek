@@ -28,8 +28,8 @@
                     <small><?php echo ucwords($this->session->userdata('tipeuser'));?></small>
                   </p></li>
 	            <li class="divider"></li>
-	            <li><a href="#">Profil</a></li>
-	            <li><a href="#">Ubah Password</a></li>
+	            <li><a href="<?php echo base_url('index.php/profil'); ?>">Profil</a></li>
+	            <li><a href="<?php echo base_url('index.php/ubah_password'); ?>">Ubah Password</a></li>
 	            <li><a href="<?php echo base_url('index.php/login/logout'); ?>">Logout</a></li>
 	          </ul>
 	        </li>

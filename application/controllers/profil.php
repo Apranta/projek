@@ -23,28 +23,29 @@ class Profil extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
 		
-		if ($this->session->userdata('tipeuser') == 'sekertaris')
+		if ($this->session->userdata('tipeuser') == 'sekretaris')
 		{
 			$this->data['sekertaris'] = $this->pengguna_model->get_data($this->id);
-			$this->load->view('profil/profil_sekertaris', $this->data);
+			$this->load->view('slate/profil_sekretaris', $this->data);
+			//$this->load->view('profil/profil_sekertaris', $this->data);
 		}
 		elseif ($this->session->userdata('tipeuser') == 'pegawai')
 		{
 			$this->data['pegawai'] = $this->pengguna_model->get_data($this->id);
 
-			$this->load->view('profil/profil_pegawai', $this->data);
+			$this->load->view('slate/profil', $this->data);
 		}
 		elseif ($this->session->userdata('tipeuser') == 'administrator')
 		{		
 			$this->data['admin'] = $this->pengguna_model->get_data($this->id);
-
-			$this->load->view('profil/profil_admin', $this->data);
+			$this->load->view('slate/profil_admin', $this->data);
+			//$this->load->view('profil/profil_admin', $this->data);
 		}
 
-		$this->load->view('footer');
+		//$this->load->view('footer');
 	}
 
 	public function edit()

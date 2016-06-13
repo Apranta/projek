@@ -28,6 +28,8 @@ class Dashboard extends CI_Controller {
     $this->data['list_tacit'] = $this->tacit_model->get_all_descend();
     $this->data['list_eksplisit'] = $this->eksplisit_model->get_all_descend();
 
+    $this->load->model('pengguna_model');
+
     //$this->load->view('header', $this->data);
     //$this->load->view('sidebar', $this->data);
     //$this->load->view('dashboard/dashboard', $this->data);
