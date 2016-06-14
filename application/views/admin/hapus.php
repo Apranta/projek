@@ -39,7 +39,7 @@
                 <div class="box-footer">
                   <center>
                     <h4><i class="icon fa fa-warning"></i> Apakah anda yakin untuk menghapus data ini?</h4>
-                    <a class="btn btn-danger btn-flat" href="<?php echo base_url('index.php/pengguna/admin/delete') . '/' . $admin->id; ?>">Hapus</a>
+                    <a class="btn btn-danger btn-flat" href="<?php echo base_url('index.php/pengguna/admin/delete') . '/' . $admin->id_pengguna; ?>">Hapus</a>
                     <a class="btn btn-default btn-flat" href="<?php echo base_url('index.php/pengguna/admin'); ?>">Tidak</a>
                   </center>
                 </div>

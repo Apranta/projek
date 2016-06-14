@@ -37,6 +37,13 @@ class Dashboard extends CI_Controller {
     $this->load->view('slate/dashboard/dashboard', $this->data);
   }
 
+  public function ranking()
+  {
+    $this->data['ranking_tacit'] = $this->tacit_model->get_rank();
+    $this->data['ranking_eksplisit'] = $this->eksplisit_model->get_rank();
+    $this->load->view('slate/ranking_pengetahuan', $this->data); 
+  }
+
   public function index2()
   {
     $this->data['last_tacit'] = $this->tacit_model->get_last();

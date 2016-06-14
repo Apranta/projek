@@ -36,12 +36,15 @@ class Admin extends CI_Controller {
 
 	public function daftar()
 	{
-		$this->data['list_admin'] = $this->pengguna_model->get_admin('administrator');		
+		//$this->data['list_admin'] = $this->pengguna_model->get_admin('administrator');		
 		//$this->data['list_admin'] = $this->pengguna_model->get_all();				
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('admin/daftar', $this->data);
-		$this->load->view('footer');
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('admin/daftar', $this->data);
+		//$this->load->view('footer');
+
+		$this->data['list_pengguna'] = $this->pengguna_model->get_all();
+		$this->load->view('slate/daftar_pengguna', $this->data);
 	}
 
 	public function lihat($id = NULL)
@@ -56,12 +59,15 @@ class Admin extends CI_Controller {
 
 	public function tambah()
 	{
-		$this->data['list_admin'] = $this->pengguna_model->get_all();
+		//$this->data['list_admin'] = $this->pengguna_model->get_all();
 
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('admin/tambah', $this->data);
-		$this->load->view('footer');
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('admin/tambah', $this->data);
+		//$this->load->view('footer');
+
+		$this->data['pengguna'] = $this->pengguna_model->get_data($this->uri->segment(4));
+		$this->load->view('slate/tambah_pengguna', $this->data);
 	}
 
 	public function insert()
@@ -90,7 +96,8 @@ class Admin extends CI_Controller {
 			$data['alamat']     	= $this->input->post('alamat');						
 			$data['email']          = $this->input->post('email');
 			$data['no_hp']          = $this->input->post('no_hp');
-			$data['tipeuser']     	= 'admin';
+			//$data['tipeuser']     	= 'admin';
+			$data['tipeuser']     	= $this->input->post('tipeuser');
 
 			$result = $this->pengguna_model->insert($data);
 
@@ -103,12 +110,17 @@ class Admin extends CI_Controller {
 
 	public function ubah($id = NULL)
 	{
+		/*
 		$this->data['admin'] = $this->pengguna_model->get_data($id);
 		
 		$this->load->view('header', $this->data);
 		$this->load->view('sidebar', $this->data);
 		$this->load->view('admin/ubah', $this->data);
 		$this->load->view('footer');
+		*/
+
+		$this->data['pengguna'] = $this->pengguna_model->get_data($id);
+		$this->load->view('slate/edit_pengguna', $this->data);
 	}
 
 	public function edit($id = NULL)
@@ -146,12 +158,17 @@ class Admin extends CI_Controller {
 
 	public function hapus($id = NULL)
 	{
+		/*
 		$this->data['admin'] = $this->pengguna_model->get_data($id);
 		
 		$this->load->view('header', $this->data);
 		$this->load->view('sidebar', $this->data);
 		$this->load->view('admin/hapus', $this->data);
 		$this->load->view('footer');
+		*/
+
+		$this->data['pengguna'] = $this->pengguna_model->get_data($id);
+		$this->load->view('slate/hapus_pengguna', $this->data);
 	}
 
 	public function delete($id = NULL)

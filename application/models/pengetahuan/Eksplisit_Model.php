@@ -65,4 +65,10 @@ class Eksplisit_Model extends CI_Model
         $query = $this->db->query("SELECT * FROM pengetahuan_eksplisit ORDER BY id_eksplisit DESC");
         return $query->result();
     }
+
+    function get_rank()
+    {
+        $query = $this->db->query("SELECT *, COUNT(pengetahuan_eksplisit.id_pengguna) AS jumlah_pengetahuan FROM pengetahuan_eksplisit JOIN pengguna ON pengetahuan_eksplisit.id_pengguna=pengguna.id_pengguna GROUP BY pengetahuan_eksplisit.id_pengguna ORDER BY jumlah_pengetahuan DESC LIMIT 10");
+        return $query->result();
+    }
 }

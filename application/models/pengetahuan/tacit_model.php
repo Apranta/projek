@@ -66,4 +66,10 @@ class Tacit_model extends CI_Model
         $query = $this->db->query("SELECT * FROM pengetahuan_tacit ORDER BY id_tacit DESC");
         return $query->result();
     }
+
+    function get_rank()
+    {
+        $query = $this->db->query("SELECT *, COUNT(pengetahuan_tacit.id_pengguna) AS jumlah_pengetahuan FROM pengetahuan_tacit JOIN pengguna ON pengetahuan_tacit.id_pengguna=pengguna.id_pengguna GROUP BY pengetahuan_tacit.id_pengguna ORDER BY jumlah_pengetahuan DESC LIMIT 10");
+        return $query->result();
+    }
 }

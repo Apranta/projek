@@ -3,7 +3,7 @@
 
   <div class="container">
     <center>
-      <h1>Daftar Pengetahuan Eksplisit</h1>
+      <h1>Daftar Pengetahuan Tacit</h1>
     </center>
     <a class="btn btn-primary btn-flat" href="<?php echo base_url('index.php/pengetahuan/tacit/tambah') ?>"><i class="glyphicon glyphicon-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Pengetahuan</a>
     <table id="table_tacit" class="table table-bordered table-hover" >
