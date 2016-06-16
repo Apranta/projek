@@ -105,12 +105,14 @@ Class Tacit extends CI_Controller
 
 	function hapus($id = NULL)
 	{
-		$this->data['tacit'] = $this->tacit_model->get_data($id);
+		//$this->data['tacit'] = $this->tacit_model->get_data($id);
 		
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('pengetahuan/tacit/hapus', $this->data);
-		$this->load->view('footer');
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('pengetahuan/tacit/hapus', $this->data);
+		//$this->load->view('footer');
+		$this->data['tacit'] = $this->tacit_model->get_data($this->uri->segment(4));
+		$this->load->view('slate/hapus_tacit', $this->data);
 	}
 
 	function delete($id = NULL)
