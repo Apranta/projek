@@ -133,11 +133,12 @@ class Dashboard extends CI_Controller {
         
         }
         
-        $this->load->view('header', $this->data);
-        $this->load->view('sidebar', $this->data);
-        $this->load->view('dashboard/dashboard', $this->data);
-        $this->load->view('footer');
+        //$this->load->view('header', $this->data);
+        //$this->load->view('sidebar', $this->data);
+        //$this->load->view('dashboard/dashboard', $this->data);
+        //$this->load->view('footer');
 
+        $this->load->view('slate/dashboard/dashboard', $this->data);
   }
 
   function sortIndex($max_index, $temp_index)
