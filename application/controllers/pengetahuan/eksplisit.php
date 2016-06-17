@@ -97,10 +97,11 @@ Class Eksplisit extends CI_Controller
 	{
 		$this->data['eksplisit'] = $this->eksplisit_model->get_data($id);
 		
-		$this->load->view('header', $this->data);
-		$this->load->view('sidebar', $this->data);
-		$this->load->view('pengetahuan/eksplisit/ubah', $this->data);
-		$this->load->view('footer');
+		//$this->load->view('header', $this->data);
+		//$this->load->view('sidebar', $this->data);
+		//$this->load->view('pengetahuan/eksplisit/ubah', $this->data);
+		//$this->load->view('footer');
+		$this->load->view('slate/ubah_eksplisit', $this->data);
 	}
 
 	function edit($id=NULL)

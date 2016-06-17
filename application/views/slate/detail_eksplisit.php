@@ -54,7 +54,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <?php echo "<iframe  src=".base_url("eksplisit")."/".$detail_eksplisit->file."  width=100% height=500px ></iframe>";   ?>
+        <?php echo "<iframe  src=".base_url("eksplisit")."/".$detail_eksplisit->file."  width='100%' height='500' ></iframe>";   ?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
