@@ -30,9 +30,9 @@
             </div>
 
             <div class="form-group">
-              <label for="masalah" class="col-md-3 control-label">Masalah*</label>
+              <label for="masalah" class="col-md-3 control-label">Deskripsi*</label>
               <div class="col-md-9">                      
-                <textarea class="form-control" name="masalah"  placeholder = "Masalah" rows = "5" required></textarea>
+                <textarea class="form-control" name="deskripsi"  placeholder = "Deskripsi" rows = "5" required></textarea>
               </div>
             </div>  
 
