@@ -56,7 +56,7 @@ class Eksplisit_Model extends CI_Model
 
     function get_all_inner_join()
     {
-        $query = $this->db->query("SELECT * FROM `pengetahuan_eksplisit` inner join pengguna on pengetahuan_eksplisit.id_pengguna = pengguna.id_pengguna");
+        $query = $this->db->query("SELECT * FROM `pengetahuan_eksplisit` inner join pengguna on pengetahuan_eksplisit.id_pengguna = pengguna.id_pengguna WHERE pengetahuan_eksplisit.id_pengguna=".$this->session->userdata('id'));
         return $query->result();
     }
 

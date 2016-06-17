@@ -60,7 +60,7 @@
                       <select class="form-control" id="tipeuser" name="tipeuser">
                       	<option value="administrator">Administrator</option>
                       	<option value="sekertaris">Sekertaris</option>
-                      	<option value="pengguna">Pengguna</option>
+                      	<option value="pegawai">Pegawai</option>
                       </select>
                     </div>
                   </div>

@@ -51,7 +51,7 @@ class Tacit_model extends CI_Model
 
     function get_all_inner_join()
     {
-        $query = $this->db->query("SELECT * FROM `pengetahuan_tacit` inner join pengguna on pengetahuan_tacit.id_pengguna = pengguna.id_pengguna");
+        $query = $this->db->query("SELECT * FROM `pengetahuan_tacit` inner join pengguna on pengetahuan_tacit.id_pengguna = pengguna.id_pengguna WHERE pengetahuan_tacit.id_pengguna=".$this->session->userdata('id'));
         return $query->result();
     }
 
@@ -70,6 +70,13 @@ class Tacit_model extends CI_Model
     function get_rank()
     {
         $query = $this->db->query("SELECT *, COUNT(pengetahuan_tacit.id_pengguna) AS jumlah_pengetahuan FROM pengetahuan_tacit JOIN pengguna ON pengetahuan_tacit.id_pengguna=pengguna.id_pengguna GROUP BY pengetahuan_tacit.id_pengguna ORDER BY jumlah_pengetahuan DESC LIMIT 10");
+        return $query->result();
+    }
+
+    function get_all_by_userId()
+    {
+        $this->db->where('id_pengguna', $this->session->userdata('id'));
+        $query = $this->db->get($this->table_name);
         return $query->result();
     }
 }

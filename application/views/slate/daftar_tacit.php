@@ -28,7 +28,7 @@
               "<td>".$tacit->masalah."</td>".
               "<td>".$tacit->solusi."</td>".                        
               '<td><center>
-              <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/tacit/lihat/" . $tacit->id_tacit) . '"><i class="glyphicon glyphicon-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/tacit/ubah" .'/'. $tacit->id_tacit) . '"><i class="glyphicon glyphicon-edit"></i></a>';
+              <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/tacit/detail/" . $tacit->id_tacit) . '"><i class="glyphicon glyphicon-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/tacit/ubah" .'/'. $tacit->id_tacit) . '"><i class="glyphicon glyphicon-edit"></i></a>';
           if ($this->session->userdata('tipeuser') == 'administrator') {                      
             echo '<a class="btn btn-danger btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/tacit/hapus/" . $tacit->id_tacit) . '"><i class="glyphicon glyphicon-trash"></i></a>';
           }

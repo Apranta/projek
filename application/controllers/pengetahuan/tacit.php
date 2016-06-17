@@ -38,6 +38,8 @@ Class Tacit extends CI_Controller
 		//$this->load->view('sidebar', $this->data);
 		//$this->load->view('pengetahuan/tacit/daftar', $this->data);
 		//$this->load->view('footer');
+		
+		//$this->data['list_tacit'] = $this->tacit_model->get_all_by_userId();
 		$this->load->view('slate/daftar_tacit', $this->data);
 	}
 
