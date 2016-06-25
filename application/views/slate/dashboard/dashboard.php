@@ -16,10 +16,10 @@
 
 	<div class="jumbotron" id="jumbotron">
 		<img src="<?= base_url('assets/slate/img/dishub-kominfo.png') ?>" width="100" height="110">
-		<h2>Selamat datang di Knowledge Management System</h2>
+		<h2>Selamat Datang di Knowledge Management System</h2>
 	</div>
 	<div id="search_section">
-		<form method = "post" action = "<?php echo base_url('index.php/dashboard/searching');?>">
+		<form method = "post" action = "<?php echo base_url('index.php/dashboard/search');?>">
           
           <div class="form-group" id="search_form">
 			  <div class="input-group">
@@ -34,11 +34,56 @@
 		
 	</div>
 	<div class="container well">
-		<?php if (isset($text_tacit, $text_eksplisit)): ?>
+		<?php //if (isset($text_tacit, $text_eksplisit)): 
+				if (count($text_tacit) != 0 or count($text_eksplisit != 0)):	?>
 			<center>
 				<h3>Cari Pengetahuan</h3>
 			</center>
 		<div class="row">
+			<div class="col-md-6">
+				<?php if (count($text_tacit) != 0): ?>
+					<?php foreach ($text_tacit as $row): ?>
+						<div class="box box-primary">
+							<div class="box-header">
+								<h5><strong><?= $row->judul ?></strong></h5>
+								<strong>Masalah: </strong><br/>
+								<p align="justify"><?= $row->masalah ?></p>
+								<strong>Solusi: </strong><br/>
+								<p align="justify"><?= $row->solusi ?></p>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>
+			</div>
+			<div class="col-md-6">
+				<?php if (count($text_eksplisit) != 0): ?>
+					<?php foreach ($text_eksplisit as $row): ?>
+						<div class="box box-primary">
+							<div class="box-header">
+								<h5><strong><?= $row->judul ?></strong></h5>
+								<strong>Deskripsi: </strong><br/>
+								<p align="justify"><?= $row->deskripsi ?></p>
+								<strong>Solusi: </strong><br/><br/>
+								<div class="form-group">
+				                    <div>      
+				                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Tampilkan SOP</button>                
+				                      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+				                      <div class="modal-dialog modal-lg">
+				                      <div class="modal-content">
+				                       <?php echo "<iframe  src=".base_url("eksplisit")."/".$row->solusi."  width=100% height=500px ></iframe>";   ?>             
+				                        </div>
+				                      </div>
+				                    </div>
+				                    </div>
+				                  </div>
+								
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>
+			</div>
+
+			<!--
 			<?php if(!empty($text_tacit)): ?>    
 	        <?php $n = max(array_keys($text_tacit)); ?>
 	        <?php 
@@ -152,7 +197,7 @@
 	                    </div>
 	                  </div>
 	                                                                                             
-	        <?php endif; ?>
+	        <?php endif; ?> -->
 		</div>
 		<?php else: ?>
 		<center>

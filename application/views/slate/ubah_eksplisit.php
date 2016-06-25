@@ -31,8 +31,8 @@
                   <div class="form-group">
                     <label for="deskripsi" class="col-md-3 control-label">deskripsi*</label>
                     <div class="col-md-9">                      
-                      <textarea class="form-control" name="deskripsi" rows = "5" required><?php echo $eksplisit->deskripsi;?></textarea>
-
+                      <!--<textarea class="form-control" name="deskripsi" rows = "5" required><?php echo $eksplisit->deskripsi;?></textarea>-->
+                      <?php echo $this->ckeditor->editor('deskripsi', $eksplisit->deskripsi);?>
                     </div>
                   </div>  
 

@@ -43,6 +43,12 @@ Class Tacit extends CI_Controller
 		$this->load->view('slate/daftar_tacit', $this->data);
 	}
 
+	function daftar_pengetahuan()
+	{
+		$this->data['list_tacit'] = $this->tacit_model->get_all_list();
+		$this->load->view('slate/daftar_ptacit', $this->data);
+	}
+
 	function lihat($id = NULL)
 	{
 		$this->data['tacit'] = $this->tacit_model->get_data($id);

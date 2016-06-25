@@ -32,7 +32,7 @@
             <div class="form-group">
               <label for="masalah" class="col-md-3 control-label">Deskripsi*</label>
               <div class="col-md-9">                      
-                <textarea class="form-control" name="deskripsi"  placeholder = "Deskripsi" rows = "5" required></textarea>
+                <!--<textarea class="form-control" name="deskripsi"  placeholder = "Deskripsi" rows = "5" required></textarea>--><?php echo $this->ckeditor->editor('deskripsi',@$default_value);?>
               </div>
             </div>  
 

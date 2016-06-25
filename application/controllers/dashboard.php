@@ -39,9 +39,13 @@ class Dashboard extends CI_Controller {
 
   public function ranking()
   {
-    $this->data['ranking_tacit'] = $this->tacit_model->get_rank();
-    $this->data['ranking_eksplisit'] = $this->eksplisit_model->get_rank();
-    $this->load->view('slate/ranking_pengetahuan', $this->data); 
+    if ($this->session->userdata('tipeuser') === 'sekertaris') {
+        $this->data['ranking_tacit'] = $this->tacit_model->get_rank();
+        $this->data['ranking_eksplisit'] = $this->eksplisit_model->get_rank();
+        $this->load->view('slate/ranking_pengetahuan', $this->data); 
+    } else {
+        $this->index();
+    }
   }
 
   public function index2()
@@ -53,6 +57,45 @@ class Dashboard extends CI_Controller {
     $this->load->view('sidebar', $this->data);
     $this->load->view('dashboard/dashboard', $this->data);
     $this->load->view('footer');
+  }
+
+
+  public function search() {
+    $pattern = $this->input->post('kata_kunci');
+    $this->praprocess = new Praprocessing();
+    $pattern = $this->praprocess->casefolding($pattern);
+    $pattern = $this->praprocess->tokenizing($pattern);
+
+    $this->data['text_tacit'] = array();
+    $this->data['text_eksplisit'] = array();
+
+    $this->booyer = new Booyermore();
+
+    $text_tacit = $this->tacit_model->get_all();
+    if ($text_tacit != null) {
+        foreach ($text_tacit as $row) {
+            foreach ($pattern as $p) {
+                if ($this->booyer->BoyerMoore($this->praprocess->casefolding($row->masalah), $p) != -1) {
+                    $this->data['text_tacit'] []= $row;
+                    break;
+                }
+            }
+        }
+    }
+
+    $text_eksplisit = $this->eksplisit_model->get_all();
+    if ($text_eksplisit != null) {
+        foreach ($text_eksplisit as $row) {
+            foreach ($pattern as $p) {
+                if ($this->booyer->BoyerMoore($this->praprocess->casefolding($row->deskripsi), $p) != -1) {
+                    $this->data['text_eksplisit'] []= $row;
+                    break;
+                }
+            }
+        }
+    }
+
+    $this->load->view('slate/dashboard/dashboard', $this->data);
   }
 
   public function searching()

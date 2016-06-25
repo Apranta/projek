@@ -3,9 +3,10 @@
 
   <div class="container">
     <center>
-      <h1>Daftar Pengetahuan Eksplisit</h1>
+      <h1>Pengetahuan Eksplisit</h1>
     </center>
     <a class="btn btn-primary btn-flat" href="<?php echo base_url('index.php/pengetahuan/eksplisit/tambah') ?>"><i class="glyphicon glyphicon-plus"></i>&nbsp;&nbsp;&nbsp;Tambah Pengetahuan</a>
+    <a class="btn btn-primary btn-flat" href="<?php echo base_url('index.php/pengetahuan/eksplisit/daftar_pengetahuan') ?>"><i class="glyphicon glyphicon-list"></i>&nbsp;&nbsp;&nbsp;Daftar Pengetahuan</a>
     <table class="table table-bordered table-hover">
       <thead>
         <tr>
@@ -24,7 +25,7 @@
               "<td>".$Eksplisit->tanggal_input."</td>".
               "<td>".$Eksplisit->nama."</td>".
               "<td>".$Eksplisit->judul."</td>".
-              "<td>".$Eksplisit->deskripsi."</td>".
+              "<td>".substr($Eksplisit->deskripsi, 0, 100)."</td>".
               "<td>".$Eksplisit->file."</td>".                        
               '<td><center>
               <a class="btn btn-primary btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/detail/" . $Eksplisit->id_eksplisit) . '"><i class="glyphicon glyphicon-search"></i></a><a class="btn btn-warning btn-flat btn-sm" style="width:40px;" href="'. base_url("index.php/pengetahuan/Eksplisit/ubah" .'/'. $Eksplisit->id_eksplisit) . '"><i class="glyphicon glyphicon-edit"></i></a>';

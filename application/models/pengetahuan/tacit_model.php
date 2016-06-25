@@ -55,6 +55,12 @@ class Tacit_model extends CI_Model
         return $query->result();
     }
 
+    function get_all_list()
+    {
+        $query = $this->db->query("SELECT * FROM `pengetahuan_tacit` inner join pengguna on pengetahuan_tacit.id_pengguna = pengguna.id_pengguna");
+        return $query->result();
+    }
+
     function get_all() 
     {
         $query = $this->db->get($this->table_name);

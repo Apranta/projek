@@ -41,6 +41,12 @@ Class Eksplisit extends CI_Controller
 		$this->load->view('slate/daftar_eksplisit', $this->data);
 	}
 
+	function daftar_pengetahuan()
+	{
+		$this->data['list_eksplisit'] = $this->eksplisit_model->get_all_list();
+		$this->load->view('slate/daftar_peksplisit', $this->data);
+	}
+
 	function lihat($id = NULL)
 	{
 		$this->data['eksplisit'] = $this->eksplisit_model->get_data($id);
@@ -50,12 +56,28 @@ Class Eksplisit extends CI_Controller
 		$this->load->view('footer');
 	}
 
+	public function _editor($path,$width) {
+		//Loading Library For Ckeditor
+		$this->load->library('ckeditor');
+		$this->load->library('ckfinder');
+		//configure base path of ckeditor folder 
+		$this->ckeditor->basePath = base_url().'assets/slate/js/ckeditor/';
+		$this->ckeditor->config['toolbar'] = 'Full';
+		$this->ckeditor->config['language'] = 'en';
+		$this->ckeditor->config['width'] = $width;
+		//configure ckfinder with ckeditor config 
+		$this->ckfinder->SetupCKEditor($this->ckeditor,$path); 
+	}
+
 	function tambah()
 	{
 		//$this->load->view('header', $this->data);
 		//$this->load->view('sidebar', $this->data);
 		//$this->load->view('pengetahuan/eksplisit/tambah', $this->data);
-		//$this->load->view('footer');		
+		//$this->load->view('footer');
+		$path = '../js/ckfinder';
+		$width = '400px';
+		$this->_editor($path, $width);		
 		$this->load->view('slate/tambah_eksplisit', $this->data);	
 	}
 
@@ -101,6 +123,9 @@ Class Eksplisit extends CI_Controller
 		//$this->load->view('sidebar', $this->data);
 		//$this->load->view('pengetahuan/eksplisit/ubah', $this->data);
 		//$this->load->view('footer');
+		$path = '../js/ckfinder';
+		$width = '400px';
+		$this->_editor($path, $width);
 		$this->load->view('slate/ubah_eksplisit', $this->data);
 	}
 
