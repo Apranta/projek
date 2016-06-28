@@ -35,7 +35,7 @@
 	</div>
 	<div class="container well">
 		<?php //if (isset($text_tacit, $text_eksplisit)): 
-				if (count($text_tacit) != 0 or count($text_eksplisit != 0)):	?>
+				if (isset($text_tacit, $text_eksplisit) && (count($text_tacit) != 0 or count($text_eksplisit != 0))):	?>
 			<center>
 				<h3>Cari Pengetahuan</h3>
 			</center>

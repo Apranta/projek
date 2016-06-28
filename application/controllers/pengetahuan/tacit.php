@@ -31,7 +31,11 @@ Class Tacit extends CI_Controller
 
 	function daftar()
 	{
-		$this->data['list_tacit'] = $this->tacit_model->get_all_inner_join();
+		if ($this->session->userdata('tipeuser') == 'administrator' or $this->session->userdata('tipeuser') == 'sekertaris') {
+			$this->data['list_tacit'] = $this->tacit_model->get_all_inner_join2();
+		} else {
+			$this->data['list_tacit'] = $this->tacit_model->get_all_inner_join();
+		}
 		//var_dump($data['list_tacit']);
 
 		//$this->load->view('header', $this->data);

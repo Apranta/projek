@@ -31,7 +31,11 @@ Class Eksplisit extends CI_Controller
 
 	function daftar()
 	{
-		$this->data['list_eksplisit'] = $this->eksplisit_model->get_all_inner_join();		
+		if ($this->session->userdata('tipeuser') == 'administrator' or $this->session->userdata('tipeuser') == 'sekertaris') {
+			$this->data['list_eksplisit'] = $this->eksplisit_model->get_all_inner_join2();
+		} else {
+			$this->data['list_eksplisit'] = $this->eksplisit_model->get_all_inner_join();
+		}		
 
 		//$this->load->view('header', $this->data);
 		//$this->load->view('sidebar', $this->data);
@@ -150,10 +154,12 @@ Class Eksplisit extends CI_Controller
 	{
 		$this->data['eksplisit'] = $this->eksplisit_model->get_data($id);
 		
-		$this->load->view('header', $this->data);
+		/*$this->load->view('header', $this->data);
 		$this->load->view('sidebar', $this->data);
 		$this->load->view('pengetahuan/eksplisit/hapus', $this->data);
-		$this->load->view('footer');
+		$this->load->view('footer');*/
+		$this->data['eksplisit'] = $this->eksplisit_model->get_data($this->uri->segment(4));
+		$this->load->view('slate/hapus_eksplisit', $this->data);
 	}
 
 	function delete($id = NULL)
