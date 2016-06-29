@@ -15,11 +15,11 @@ class Sekertaris extends CI_Controller {
 		}
 		else
 		{
-			if ($this->session->userdata('tipeuser') != "administrator")
+			/*if ($this->session->userdata('tipeuser') != "administrator")
 			{
 				$this->session->sess_destroy();
 				redirect('login');
-			}
+			}*/
 		}
 
 		$this->load->library('form_validation');
@@ -162,5 +162,56 @@ class Sekertaris extends CI_Controller {
 		else $this->session->set_flashdata('gagal', 'Hapus data gagal.');
 
 		redirect('pengguna/sekertaris');
+	}
+
+	public function _editor($path,$width) {
+		//Loading Library For Ckeditor
+		$this->load->library('ckeditor');
+		$this->load->library('ckfinder');
+		//configure base path of ckeditor folder 
+		$this->ckeditor->basePath = base_url().'assets/slate/js/ckeditor/';
+		$this->ckeditor->config['toolbar'] = 'Full';
+		$this->ckeditor->config['language'] = 'en';
+		$this->ckeditor->config['width'] = $width;
+		//configure ckfinder with ckeditor config 
+		$this->ckfinder->SetupCKEditor($this->ckeditor,$path); 
+	}
+
+	public function email() {
+		if ($this->input->post('send')) {
+			$this->load->library('my_phpmailer');
+			$mail = new PHPMailer();
+	        $mail->IsSMTP(); // we are going to use SMTP
+	        $mail->SMTPAuth   = true; // enabled SMTP authentication
+	        $mail->SMTPSecure = "ssl";  // prefix for secure protocol to connect to the server
+	        $mail->Host       = "smtp.gmail.com";      // setting GMail as our SMTP server
+	        $mail->Port       = 465;                   // SMTP port to connect to GMail
+	        $mail->Username   = "myemail@gmail.com";  // user email address
+	        $mail->Password   = "";            // password in GMail
+	        $mail->SetFrom($mail->Username, $this->session->userdata('nama'));  //Who is sending the email
+	        $mail->AddReplyTo($this->input->post('to'), $this->input->post('to'));  //email address that receives the response
+	        $mail->Subject    = $this->input->post('subject');
+	        $mail->Body      = $this->input->post('message');
+	        $mail->AltBody    = "Plain text message";
+	        $destino = $this->input->post('to'); // Who is addressed the email to
+	        $mail->AddAddress($destino, $destino);
+
+	        //$mail->AddAttachment("images/phpmailer.gif");      // some attached files
+	        //$mail->AddAttachment("images/phpmailer_mini.gif"); // as many as you want
+	        if(!$mail->Send()) {
+	            $data["message"] = "Error: " . $mail->ErrorInfo;
+	        } else {
+	            $data["message"] = "<div class='alert alert-success'>Message sent correctly!</div>";
+	        }
+
+	        $this->session->set_flashdata('msg', $data['message']);
+	        redirect('pengguna/sekertaris/email');
+			exit;
+		}
+
+		$path = '../js/ckfinder';
+		$width = '1150px';
+		$this->_editor($path, $width);
+		$this->load->view('slate/email_form');
 	}
 }

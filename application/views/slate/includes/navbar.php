@@ -22,6 +22,7 @@
 	        </li>
 	        <?php if ($this->session->userdata('tipeuser') === 'sekertaris'): ?>
 	        <li><a href="<?= base_url('index.php/dashboard/ranking') ?>">Ranking Pegawai</a></li>
+	        <li><a href="<?= base_url('index.php/pengguna/sekertaris/email') ?>">Kirim Reward</a></li>
 	        <?php endif; ?>
 	        <?php if ($this->session->userdata('tipeuser') === 'administrator'): ?>
 	        	<li><a href="<?= base_url('index.php/pengguna/admin/') ?>">Tambah Pengguna</a></li>
