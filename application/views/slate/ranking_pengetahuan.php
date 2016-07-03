@@ -16,6 +16,7 @@
 							<td>No</td>
 							<td>Nama</td>
 							<td>Jumlah Pengetahuan</td>
+							<td></td>
 						</tr>
 					</thead>
 					<tbody>
@@ -24,6 +25,7 @@
 								<td><?= ++$i ?></td>
 								<td><?= $row->nama ?></td>
 								<td><?= $row->jumlah_pengetahuan ?></td>
+								<td><a class="btn btn-primary" href="<?= base_url('index.php/pengguna/sekertaris/email/'.$row->id_pengguna) ?>">Kirim Reward</a></td>
 							</tr>
 						<?php endforeach; ?>
 					</tbody>
@@ -39,6 +41,7 @@
 							<td>No</td>
 							<td>Nama</td>
 							<td>Jumlah Pengetahuan</td>
+							<td></td>
 						</tr>
 					</thead>
 					<tbody>
@@ -47,6 +50,7 @@
 								<td><?= ++$i ?></td>
 								<td><?= $row->nama ?></td>
 								<td><?= $row->jumlah_pengetahuan ?></td>
+								<td><a class="btn btn-primary" href="<?= base_url('index.php/pengguna/sekertaris/email/'.$row->id_pengguna) ?>">Kirim Reward</a></td>
 							</tr>
 						<?php endforeach; ?>
 					</tbody>

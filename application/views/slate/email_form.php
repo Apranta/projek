@@ -14,7 +14,7 @@
 	<?= form_open('pengguna/sekertaris/email') ?>
 		<div class="form-group">
 			<label for="to">To</label>
-			<input class="form-control" type="text" name="to" />
+			<input class="form-control" type="text" name="to" value="<?php if (isset($pengguna->email)) echo $pengguna->email;  ?>" />
 		</div>
 		<div class="form-group">
 			<label for="Subject">Subject</label>

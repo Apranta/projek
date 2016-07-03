@@ -209,9 +209,15 @@ class Sekertaris extends CI_Controller {
 			exit;
 		}
 
+		$id_pengguna = $this->uri->segment(4);
+		$data = array();
+		if (isset($id_pengguna)) {
+			$data['pengguna'] = $this->pengguna_model->get_data($id_pengguna);
+		}
+
 		$path = '../js/ckfinder';
 		$width = '1150px';
 		$this->_editor($path, $width);
-		$this->load->view('slate/email_form');
+		$this->load->view('slate/email_form', $data);
 	}
 }
