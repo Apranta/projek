@@ -25,7 +25,8 @@
 								<td><?= ++$i ?></td>
 								<td><?= $row->nama ?></td>
 								<td><?= $row->jumlah_pengetahuan ?></td>
-								<td><a class="btn btn-primary" href="<?= base_url('index.php/pengguna/sekertaris/email/'.$row->id_pengguna) ?>">Kirim Reward</a></td>
+								<td><a class="btn btn-primary" href="<?= base_url('index.php/pengguna/sekertaris/email/'.$row->id_pengguna) ?>">Kirim Reward</a>
+								</td>
 							</tr>
 						<?php endforeach; ?>
 					</tbody>
