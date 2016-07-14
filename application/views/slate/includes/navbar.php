@@ -20,6 +20,7 @@
 	            <li><a href="<?php echo base_url('index.php/pengetahuan/eksplisit/daftar_pengetahuan');?>">Eksplisit</a></li>
 	          </ul>
 	        </li>
+	        <li><a href="<?= base_url('index.php/dashboard/list_pengetahuan') ?>">Daftar Pengetahuan</a></li>
 	        <?php if ($this->session->userdata('tipeuser') === 'sekertaris'): ?>
 	        <li><a href="<?= base_url('index.php/dashboard/ranking') ?>">Ranking Pegawai</a></li>
 	        <li><a href="<?= base_url('index.php/pengguna/sekertaris/email') ?>">Kirim Reward</a></li>

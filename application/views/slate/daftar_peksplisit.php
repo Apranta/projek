@@ -25,7 +25,8 @@
               "<td>".$eksplisit->nama."</td>".
               "<td>".$eksplisit->judul."</td>".
               "<td>".$eksplisit->deskripsi."</td>".
-              "<td>".$eksplisit->file."</td>";
+              "<td>".$eksplisit->file."</td>".
+            "</tr>";
         }
         ?>
       </tbody>

@@ -37,6 +37,13 @@ class Dashboard extends CI_Controller {
     $this->load->view('slate/dashboard/dashboard', $this->data);
   }
 
+  public function list_pengetahuan() {
+    $this->data['list_tacit'] = $this->tacit_model->get_all();
+    $this->data['list_eksplisit'] = $this->eksplisit_model->get_all();
+
+    $this->load->view('slate/dashboard/list_pengetahuan', $this->data);
+  }
+
   public function ranking()
   {
     if ($this->session->userdata('tipeuser') === 'sekertaris') {
