@@ -47,13 +47,9 @@ class Dashboard extends CI_Controller {
 
   public function ranking()
   {
-    if ($this->session->userdata('tipeuser') === 'sekertaris') {
-        $this->data['ranking_tacit'] = $this->tacit_model->get_rank();
-        $this->data['ranking_eksplisit'] = $this->eksplisit_model->get_rank();
-        $this->load->view('slate/ranking_pengetahuan', $this->data); 
-    } else {
-        $this->index();
-    }
+    $this->data['ranking_tacit'] = $this->tacit_model->get_rank();
+    $this->data['ranking_eksplisit'] = $this->eksplisit_model->get_rank();
+    $this->load->view('slate/ranking_pengetahuan', $this->data);     
   }
 
   public function index2()

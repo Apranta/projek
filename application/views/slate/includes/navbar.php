@@ -21,9 +21,7 @@
 	          </ul>
 	        </li>
 	        <li><a href="<?= base_url('index.php/dashboard/list_pengetahuan') ?>">Daftar Pengetahuan</a></li>
-	        <?php if ($this->session->userdata('tipeuser') === 'sekertaris'): ?>
 	        <li><a href="<?= base_url('index.php/dashboard/ranking') ?>">Ranking Pegawai</a></li>
-	        <?php endif; ?>
 	        <?php if ($this->session->userdata('tipeuser') === 'administrator'): ?>
 	        	<li><a href="<?= base_url('index.php/pengguna/admin/') ?>">Tambah Pengguna</a></li>
 	        <?php endif; ?>

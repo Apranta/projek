@@ -25,8 +25,10 @@
 								<td><?= ++$i ?></td>
 								<td><?= $row->nama ?></td>
 								<td><?= $row->jumlah_pengetahuan ?></td>
+								<?php if ($this->session->userdata('tipeuser') == 'sekertaris'): ?>
 								<td><a class="btn btn-primary" href="<?= base_url('index.php/pengguna/sekertaris/kirim_reward/'.$row->id_pengguna) ?>">Kirim Reward</a>
 								</td>
+								<?php endif; ?>
 							</tr>
 						<?php endforeach; ?>
 					</tbody>
@@ -51,7 +53,10 @@
 								<td><?= ++$i ?></td>
 								<td><?= $row->nama ?></td>
 								<td><?= $row->jumlah_pengetahuan ?></td>
-								<td><a class="btn btn-primary" href="<?= base_url('index.php/pengguna/sekertaris/kirim_reward/'.$row->id_pengguna) ?>">Kirim Reward</a></td>
+								<?php if ($this->session->userdata('tipeuser') == 'sekertaris'): ?>
+								<td><a class="btn btn-primary" href="<?= base_url('index.php/pengguna/sekertaris/kirim_reward/'.$row->id_pengguna) ?>">Kirim Reward</a>
+								</td>
+								<?php endif; ?>
 							</tr>
 						<?php endforeach; ?>
 					</tbody>
