@@ -3,7 +3,7 @@
 
 <div class="container">
 	<center>
-		<h2>Kirim reward melalui email</h2>
+		<h2>Kirim reward</h2>
 	</center>
 	<?php  
 		$msg = $this->session->flashdata('msg');
@@ -11,16 +11,12 @@
 			echo $msg;
 		}
 	?>
-	<?= form_open('pengguna/sekertaris/email') ?>
+	<?= form_open('pengguna/sekertaris/kirim_reward/' . $this->session->flashdata('id_pengguna')) ?>
 		<div class="form-group">
-			<label for="to">To</label>
-			<input class="form-control" type="text" name="to" value="<?php if (isset($pengguna->email)) echo $pengguna->email;  ?>" />
+			<label for="Subject">Judul Reward</label>
+			<input class="form-control" type="text" name="reward" />
 		</div>
-		<div class="form-group">
-			<label for="Subject">Subject</label>
-			<input class="form-control" type="text" name="subject" />
-		</div>
-		<?php echo $this->ckeditor->editor('message', '');?>
+		<?php echo $this->ckeditor->editor('deskripsi', '');?>
 		<input class="btn btn-success" type="submit" name="send" value="Send" />
 	<?= form_close() ?>
 </div>

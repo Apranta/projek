@@ -17,6 +17,7 @@ class Ubah_password extends CI_Controller {
 		}
 
 		$this->data['judulhalaman'] = 'Ubah Password';
+		$this->load->model('reward_model');
 	}
 
 	public function index()

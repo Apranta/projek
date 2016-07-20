@@ -15,15 +15,15 @@ class Pegawai extends CI_Controller {
 		}
 		else
 		{
-			if ($this->session->userdata('tipeuser') != "administrator")
-			{
-				$this->session->sess_destroy();
-				redirect('login');
-			}
+			//if ($this->session->userdata('tipeuser') != "administrator")
+			//{
+			//	$this->session->sess_destroy();
+			//	redirect('login');
+			//}
 		}
 
 		$this->load->library('form_validation');
-
+		$this->load->model('reward_model');
 		$this->load->model('pengguna_model');
 		$this->data['judulhalaman'] = 'Pegawai';		
 	}
@@ -161,5 +161,44 @@ class Pegawai extends CI_Controller {
 		else $this->session->set_flashdata('gagal', 'Hapus data gagal.');
 
 		redirect('pengguna/pegawai');
+	}
+
+	public function view_reward() {
+		$id_reward = $this->uri->segment(4);
+		if (!isset($id_reward)) {
+			redirect('pengguna/pegawai');
+			exit;
+		}
+
+		$this->data['reward'] = $this->reward_model->get_data($id_reward);
+		$this->data['pegawai'] = $this->pengguna_model->get_data($this->data['reward']->id_pengguna);
+
+		$this->load->view('slate/view_reward', $this->data);
+	}
+
+	public function download() {
+		$id_reward = $this->uri->segment(4);
+		if (!isset($id_reward)) {
+			redirect('pengguna/pegawai');
+			exit;
+		}
+
+		$this->data['reward'] = $this->reward_model->get_data($id_reward);
+		$this->data['pegawai'] = $this->pengguna_model->get_data($this->data['reward']->id_pengguna);
+
+		//load the view and saved it into $html variable
+        $html = $this->load->view('slate/download', $this->data, true);
+ 
+        //this the the PDF filename that user will get to download
+        $pdfFilePath = "sertifikat.pdf";
+ 
+        //load mPDF library
+        $this->load->library('m_pdf');
+ 
+       //generate the PDF from the given html
+        $this->m_pdf->pdf->WriteHTML($html);
+ 
+        //download it.
+        $this->m_pdf->pdf->Output($pdfFilePath, "D");
 	}
 }

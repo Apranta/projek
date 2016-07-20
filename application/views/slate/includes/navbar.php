@@ -23,10 +23,28 @@
 	        <li><a href="<?= base_url('index.php/dashboard/list_pengetahuan') ?>">Daftar Pengetahuan</a></li>
 	        <?php if ($this->session->userdata('tipeuser') === 'sekertaris'): ?>
 	        <li><a href="<?= base_url('index.php/dashboard/ranking') ?>">Ranking Pegawai</a></li>
-	        <li><a href="<?= base_url('index.php/pengguna/sekertaris/email') ?>">Kirim Reward</a></li>
 	        <?php endif; ?>
 	        <?php if ($this->session->userdata('tipeuser') === 'administrator'): ?>
 	        	<li><a href="<?= base_url('index.php/pengguna/admin/') ?>">Tambah Pengguna</a></li>
+	        <?php endif; ?>
+	        <?php if ($this->session->userdata('tipeuser') === 'pegawai'): ?>
+	        	<li class="dropdown">
+	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Notifikasi Reward<span class="caret"></span></a>
+	        		<ul class="dropdown-menu" role="menu">
+	        			<?php  
+	        				$reward = $this->reward_model->get_data_descending($this->session->userdata('id'));
+	        				foreach ($reward as $row):
+	        			?>
+	        				<li style="border: 1px solid #444; padding:12px;">
+	        					<a href="<?= base_url('index.php/pengguna/pegawai/view_reward/'.$row->id_reward) ?>">
+	        						<h4><?= $row->reward ?></h4>
+		        					<p class="small pull-right"><?= $row->tanggal_reward ?></p>
+		        					<p><?= $row->deskripsi ?></p>
+	        					</a>
+	        				</li>
+	        			<?php endforeach; ?>
+	        		</ul>
+	        	</li>
 	        <?php endif; ?>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profil <span class="caret"></span></a>

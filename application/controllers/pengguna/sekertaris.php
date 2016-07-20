@@ -179,6 +179,8 @@ class Sekertaris extends CI_Controller {
 
 	public function email() {
 		if ($this->input->post('send')) {
+			$this->load->model('reward_model');
+
 			$this->load->library('my_phpmailer');
 			$mail = new PHPMailer();
 	        $mail->IsSMTP(); // we are going to use SMTP
@@ -219,5 +221,36 @@ class Sekertaris extends CI_Controller {
 		$width = '1150px';
 		$this->_editor($path, $width);
 		$this->load->view('slate/email_form', $data);
+	}
+
+	public function kirim_reward() {
+		$id_pengguna = $this->uri->segment(4);
+		if (!isset($id_pengguna)) {
+			redirect('pengguna/sekertaris');
+			exit;
+		}
+
+
+		if ($this->input->post('send')) {
+			$this->load->model('reward_model');
+			
+			$data = array(
+				'id_pengguna' 		=> $id_pengguna,
+				'reward'			=> $this->input->post('reward'),
+				'deskripsi'			=> $this->input->post('deskripsi'),
+				'tanggal_reward'	=> date("Y-m-d")
+			);
+
+			$this->reward_model->insert($data);
+			$this->session->set_flashdata('msg', '<div class="alert alert-success">Reward berhasil dikirim</div>');
+			redirect('pengguna/sekertaris/kirim_reward/'.$id_pengguna);
+			exit;
+		}
+
+		$path = '../js/ckfinder';
+		$width = '1150px';
+		$this->_editor($path, $width);
+		$this->session->set_flashdata('id_pengguna', $id_pengguna);
+		$this->load->view('slate/email_form');
 	}
 }

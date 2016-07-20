@@ -13,6 +13,16 @@ class Reward_model extends CI_Model {
         return $query->result();
     }
 
+    function get_all_descending() {
+        $query = $this->db->query("SELECT * FROM " . $this->table_name . " ORDER BY " . $this->primary_key . " DESC");
+        return $query->result();
+    }
+
+    function get_data_descending($id_pengguna) {
+        $query = $this->db->query("SELECT * FROM " . $this->table_name . " WHERE id_pengguna='".$id_pengguna."' ORDER BY " . $this->primary_key . " DESC LIMIT 5");
+        return $query->result();
+    }
+
     function get_data($id) {
         $this->db->where($this->primary_key, $id);
         $query = $this->db->get($this->table_name);

@@ -17,6 +17,7 @@ class Dashboard extends CI_Controller {
     require_once(APPPATH.'controllers/stringmatch/booyermore.php'); //include controller
     $this->load->model('pengetahuan/tacit_model');
     $this->load->model('pengetahuan/eksplisit_model');
+    $this->load->model('reward_model');
     $this->data['judulhalaman'] = 'Dashboard';    
   }
 

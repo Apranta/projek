@@ -19,6 +19,7 @@ class Profil extends CI_Controller {
 		$this->data['judulhalaman'] = "Profil";
 
 		$this->id = $this->session->userdata('id');
+		$this->load->model('reward_model');
 	}
 
 	public function index()
