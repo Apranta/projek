@@ -23,6 +23,11 @@ class Reward_model extends CI_Model {
         return $query->result();
     }
 
+    function group_by_id_pengguna() {
+        $query = $this->db->query("SELECT * FROM " . $this->table_name . " GROUP BY id_pengguna");
+        return $query->result();
+    }
+
     function get_data($id) {
         $this->db->where($this->primary_key, $id);
         $query = $this->db->get($this->table_name);

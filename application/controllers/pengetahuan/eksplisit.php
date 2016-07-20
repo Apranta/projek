@@ -12,7 +12,7 @@ Class Eksplisit extends CI_Controller
 		
 		$this->data['judulhalaman'] = "Eksplisit";
 		$this->load->model('pengetahuan/eksplisit_model');
-
+		$this->load->model('reward_model');
 	}
 
 	public function index()

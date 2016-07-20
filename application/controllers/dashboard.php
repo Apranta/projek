@@ -17,6 +17,7 @@ class Dashboard extends CI_Controller {
     require_once(APPPATH.'controllers/stringmatch/booyermore.php'); //include controller
     $this->load->model('pengetahuan/tacit_model');
     $this->load->model('pengetahuan/eksplisit_model');
+    $this->load->model('pengguna_model');
     $this->load->model('reward_model');
     $this->data['judulhalaman'] = 'Dashboard';    
   }
@@ -39,10 +40,20 @@ class Dashboard extends CI_Controller {
   }
 
   public function list_pengetahuan() {
+    if ($this->session->userdata('tipeuser') != 'administrator' && $this->session->userdata('tipeuser') != 'sekertaris') {
+        redirect('dashboard');
+        exit;
+    }
     $this->data['list_tacit'] = $this->tacit_model->get_all();
     $this->data['list_eksplisit'] = $this->eksplisit_model->get_all();
 
     $this->load->view('slate/dashboard/list_pengetahuan', $this->data);
+  }
+
+  public function list_reward() {
+
+    $this->data['reward'] = $this->reward_model->group_by_id_pengguna();
+    $this->load->view('slate/list_reward', $this->data);
   }
 
   public function ranking()
@@ -65,6 +76,7 @@ class Dashboard extends CI_Controller {
 
 
   public function search() {
+    $this->load->model('reward_model');
     $pattern = $this->input->post('kata_kunci');
     $this->praprocess = new Praprocessing();
     $pattern = $this->praprocess->casefolding($pattern);

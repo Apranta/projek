@@ -8,6 +8,7 @@ class Blank extends CI_Controller {
 	{
 		parent::__construct();
 		$this->data['judulhalaman'] = 'Blank Page';
+		$this->load->model('reward_model');
 	}
 
 	public function index()

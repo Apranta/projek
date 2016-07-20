@@ -5,6 +5,7 @@ Class Booyermore extends CI_Controller
   {
     parent::__construct();    
         define('ALPHABET_SIZE',1);
+        $this->load->model('reward_model');
     }
         
   public function suffixes($pattern, &$suffixes)

@@ -13,6 +13,7 @@ Class Tacit extends CI_Controller
 		$this->load->helper('url');
 		$this->load->model('pengetahuan/tacit_model');
 		$this->data['judulhalaman'] = "Tacit";
+		$this->load->model('reward_model');
 	}
 
 	public function index()
@@ -37,7 +38,6 @@ Class Tacit extends CI_Controller
 			$this->data['list_tacit'] = $this->tacit_model->get_all_inner_join();
 		}
 		//var_dump($data['list_tacit']);
-
 		//$this->load->view('header', $this->data);
 		//$this->load->view('sidebar', $this->data);
 		//$this->load->view('pengetahuan/tacit/daftar', $this->data);

@@ -5,7 +5,7 @@ class praprocessing extends CI_Controller
 	public function __construct()
     {
         parent::__construct();
-        
+        $this->load->model('reward_model');
     }
 
     public function casefolding($sentence)
